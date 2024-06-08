@@ -13567,3 +13567,308 @@ Font load
   }
 }
 /*---------------------------------------------------- */
+
+
+/* new footer8 */
+.footer8 {
+  box-sizing: border-box;
+
+  margin: 0;
+  color: white;
+  background-color: black;
+  text-align: center;
+  border-top: 1px solid #c1dd42;
+}
+
+.container8 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container8 ul {
+  list-style: none;
+  margin: 1em 0;
+  padding-top: 9px;
+  margin-bottom: -3px;
+}
+
+.footer_adr {
+  color: #c1dd42;
+  max-width: 25em;
+  font-size: 0.9em;
+  line-height: 23px;
+  margin: 1em auto;
+}
+
+.media-icons8 a {
+  font-size: 1.1em;
+  width: 2em;
+  height: 2em;
+  border: 1px solid #c1dd42;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  margin: 0 0.5em;
+}
+
+.media-icons8 a:hover {
+  background: #c1dd42;
+  color: black;
+}
+
+.footer8 .menu8 a {
+  transition: 0.3s;
+  font-weight: 600;
+  color: white;
+}
+
+.footer8 .menu8 a:hover {
+  color: #c1dd42;
+}
+
+.footer8 .menu8 li {
+  display: inline-block;
+  margin: 0 1em;
+  text-align: center;
+
+}
+
+.footer8 .media-icons8 {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+
+.footer_logo8 {
+  height: auto;
+  width: 50%;
+}
+
+.footer_logo8 {
+  margin-bottom: 20px;
+}
+
+.img8 {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .container8 {
+    padding: 1em;
+  }
+
+  .footer_logo8 {
+    width: 70%;
+  }
+
+  .img8 {
+    max-width: 70%;
+  }
+
+  .footer8 .menu8 li {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .media-icons8 a {
+    margin: 0.5em;
+  }
+
+  .footer_adr {
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_logo8 {
+    width: 80%;
+  }
+
+  .img8 {
+    max-width: 80%;
+  }
+
+  .footer_adr {
+    font-size: 0.75em;
+    line-height: 1.4em;
+    max-width: 20em;
+  }
+}
+
+
+/* Teaser section for Contact Form*/
+.teaser-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  background-color: #171717;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+  position: relative;
+  width: 50%;
+}
+
+.Form-teaser {
+  padding: 50px;
+}
+
+.schedule-button svg {
+  margin-left: 8px;
+  fill: black;
+  /* Ensure the icon color matches the text color */
+}
+
+.teaser-image {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #171717 ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-button {
+  position: absolute;
+  font-weight: 600;
+  /* bottom: 60px;
+  left: 50%; */
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  background-color: #c1dd42;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.center-btn {
+  text-align: center;
+  justify-content: center;
+}
+
+.schedule-button:hover {
+  background-color: #c1dd42;
+  color: white;
+  border: 1.5px solid white;
+}
+
+.right-side {
+  width: 45%;
+  padding: 20px;
+}
+
+.right-side h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.right-side p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .teaser-section {
+    padding: 50px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .schedule-button {
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Form-teaser {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .teaser-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .schedule-button {
+    position: static;
+    margin-top: -70px;
+    transform: none;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .teaser-section {
+    padding: 10px;
+  }
+
+  .right-side h2 {
+    font-size: 20px;
+  }
+
+  .right-side p {
+    font-size: 14px;
+  }
+
+  .schedule-button {
+    padding: 10px 15px;
+    font-size: 14px;
+
+  }
+}
+
+
+/*  */
+#adjust-btn {
+  position: absolute;
+  font-weight: 600;
+  bottom: 60px;
+  left: 27%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+#adjust-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1.5px solid white;
+}
