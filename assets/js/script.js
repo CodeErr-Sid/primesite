@@ -1326,5 +1326,50 @@ Last change:    00/00/00
 	jQuery(document).ready(function (){
 		OriXy.init();
 	});
+	gsap.registerPlugin(ScrollTrigger)
+
+        const splitTypes = document.querySelectorAll('.reveal-type')
+
+        splitTypes.forEach((char,i) => {
+
+            const bg = char.dataset.bgColor
+            const fg = char.dataset.fgColor
+
+            const text = new SplitType(char, { types: 'chars'})
+
+            gsap.fromTo(text.chars, 
+                {
+                    color: bg,
+                },
+                {
+                    color: fg,
+                    duration: 0.1,
+                    stagger: 0.02,
+                    scrollTrigger: {
+                        trigger: char,
+                        start: 'top 40%',
+                        end: 'top 1%',
+                        scrub: true,
+                        markers: false,
+                        toggleActions: 'play play reverse reverse'
+                    }
+            })
+        })
+
+
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
 
 })();
+
+

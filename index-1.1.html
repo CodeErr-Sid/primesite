@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/textillate/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -41,16 +42,16 @@
 		<div class="ori-header-content-area m-0-auto">
 			<div class="ori-header-content d-flex align-items-center glassmorphism-effect justify-content-between">
 				<div class="brand-logo">
-					<a href="#"><img src="assets/img/logo/psi_logo.png" alt="" style="width: 200px;"></a>
+					<a href="#"><img src="assets/img/logo/psi_logo.png" alt="" style="width: 150px;"></a>
 				</div>
 				<div class="ori-main-navigation-area">
 					<nav class="ori-main-navigation clearfix ul-li">
 						<ul id="main-nav" class="nav navbar-nav clearfix">
-							<li><a href="#ori-slider-1">Home</a></li>
-							<li><a href="#ori-service-1">Service</a></li>
-							<li><a href="#ori-project-1">Portfolio</a></li>
+							<li><a href="#ori-slider-1">about</a></li>
+							<li><a href="#ori-service-1">services</a></li>
+							<li><a href="#ori-project-1">works</a></li>
+							<li><a href="#ori-testimonial-1">contact</a></li>
 							<!-- <li><a  href="#ori-team-1">Team</a></li> -->
-							<li><a href="#ori-testimonial-1">Testimonial</a></li>
 							<!-- <li><a  href="#ori-blog-1">Blog</a></li> -->
 						</ul>
 					</nav>
@@ -295,67 +296,6 @@
 	<!-- start of Founder's note section
 	============================================= -->
 
-	<style>
-		.outer-section-slider {
-			background-color: black;
-		}
-
-		.outer-section-founders-note {
-			background-color: #1a1a1a;
-		}
-
-		#founders-note {
-			background-color: black;
-			padding: 7rem 2.5rem;
-			border-top-left-radius: 3rem;
-			border-top-right-radius: 3rem;
-		}
-
-		.f-container {
-			display: flex;
-		}
-
-		.f-content-box {
-			flex: 2;
-		}
-
-		.about-heading-box {
-			flex: 1;
-		}
-
-
-		#f-content {
-			letter-spacing: -.0475rem;
-			font-size: 2.375rem;
-			font-weight: 300;
-		}
-
-		.founder-name-img {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap: 1rem;
-			margin-top: 1rem;
-		}
-
-		.founder-description h4,
-		.founder-description p {
-			font-family: "Outfit", sans-serif
-		}
-
-		.founder-description p {
-			margin: 0;
-			padding: 0;
-		}
-
-		.founder-img {
-			width: 5rem;
-		}
-
-		.founder-img img {
-			border-radius: 5rem;
-		}
-	</style>
 	<section class="outer-section-founders-note">
 
 		<section id="founders-note">
@@ -394,8 +334,107 @@
 
 
 
-	<!-- Start of Founder's note section
+	<!-- End of Founder's note section
 	============================================= -->
+
+	<style>
+		@import url('https://fonts.cdnfonts.com/css/thunder');
+
+		.inner-section-orv {
+			background-color: #1a1a1a;
+		}
+
+		.inner-section-orv {
+			display: flex;
+			flex-direction: column;
+			gap: 10rem;
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			z-index: -1;
+			/* Ensure it's behind other content */
+			background-color: transparent;
+			/* Optional, set the background of the container */
+		}
+
+
+		#orv-upper-text,
+		.orv-bottom-text {
+			padding: 1em 2.9em;
+		}
+
+		#orv-upper-text p {
+			font-family: 'thunder', sans-serif;
+			font-size: clamp(2rem, 5vw, 8rem);
+			width: 45%;
+			font-weight: 900;
+			letter-spacing: -9px;
+		}
+
+		.orv-bottom-text {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: end;
+		}
+
+
+		.orv-bottom-left .orv-email {
+			margin: 0;
+			font-size: 2.5rem;
+		}
+
+		.orv-bottom-right .orv-lc {
+			margin: 0;
+			font-size: 3rem;
+			text-transform: uppercase;
+			border-bottom: 3px solid white;
+		}
+
+		.inner-section-orv video {
+			width: 70%;
+			/* Reduce video size to 50% */
+			height: auto;
+			/* Maintain aspect ratio */
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0.7;
+			/* Optional: Adjust the opacity of the video */
+		}
+	</style>
+
+	<!-- Start of object roation video section
+	============================================= -->
+	<section class="outer-section-orv">
+		<section class="inner-section-orv">
+			<div id="orv-upper-text">
+				<p class="reveal-type" data-bg-color="black" data-fg-color="#fff">
+					HAVE A PROJECT IDEA? LET'S TURN IT INTO LIFE
+				</p>
+			</div>
+			<div class="orv-bottom-text">
+				<div class="orv-bottom-left">
+					<p>say hi</p>
+					<p class="orv-email ori-tlt">primesiteinnovations@gmail.com</p>
+				</div>
+				<div class="orv-bottom-right">
+					<p class="orv-lc oritlt">Let's collabrate</p>
+				</div>
+			</div>
+			<video autoplay loop muted playsinline>
+				<source src="assets/video/kreyda_logo_anim (3)-hevc-safari-depositphotos-bgremover.webm"
+					type="video/webm">
+				Your browser does not support the video tag.
+			</video>
+			<!-- <img src="assets/video/kreyda-logo-anim-3-hevc-safari-unscreen.gif" alt="" srcset=""> -->
+		</section>
+	</section>
+	<!-- End of object rotation video  section
+	============================================= -->
+
+
 
 	<!-- Start of Service section
 	============================================= -->
@@ -1151,7 +1190,50 @@
 	============================================= -->
 
 	<!-- For Js Library -->
+	<!-- scroll animation for the text -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="https://unpkg.com/split-type"></script>
+	<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+	<!-- textillate  -->
+
+
 	<script src="assets/js/jquery.min.js"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		var jq371 = jQuery.noConflict(true);
+	</script>
+	<script src="assets/textillate/jquery.fittext.js"></script>
+	<script src="assets/textillate/jquery.lettering.js"></script>
+	<script src="assets/textillate/jquery.textillate.js"></script>
+	<script>
+		jq371(document).ready(function () {
+
+			console.log("Document ready. Using jQuery version:", jq371.fn.jquery);
+
+			jq371('.ori-tlt').mouseenter(function () {
+				console.log("Mouse entered .ori-tlt element.");
+				jq371(this).textillate({
+					in: {
+						effect: 'fadeInUp', // Use fadeInUp effect
+						delayScale: 1.5,    // Delay between each letter
+						delay: 50           // Delay in milliseconds
+					},
+					loop: false           // Do not loop the animation
+				});
+			}).mouseleave(function () {
+				// Mouseleave event handler
+				console.log("Mouse left .ori-tlt element.");
+				jq371(this).textillate('out');
+			});
+		})
+	</script>
+
+
 	<script src="assets/js/jquery-ui.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
@@ -1174,6 +1256,5 @@
 	<script src="assets/js/script.js"></script>
 </body>
 
-<!-- Mirrored from html.themexriver.com/Orixy/index-1.1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Jun 2024 05:05:13 GMT -->
 
 </html>
