@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/textillate/animate.css">
-    <title>Document</title>
+    <title>Clip-Path Animation on Hover</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .ori-service-heading {
+            position: relative;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .ori-service-heading:hover .ori-service-clip-img {
+            animation: clipFadeIn 1s forwards;
+        }
+
+        .ori-service-clip-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 400px;
+            background: url('assets/img/about/ab-sc.png') no-repeat center center;
+            background-size: cover;
+            clip-path: inset(0 100% 0 0);
+            opacity: 0;
+        }
+
+        @keyframes clipFadeIn {
+            0% {
+                clip-path: inset(0 100% 0 0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                clip-path: inset(0 0 0 0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
-    <h1 class="tlt" data-in-effect="fadeInUp">Title</h1>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="assets/textillate/jquery.fittext.js"></script>
-    <script src="assets/textillate/jquery.lettering.js"></script>
-    <script src="assets/textillate/jquery.textillate.js"></script>
-
-    <script>
-        $(function () {
-            $('.tlt').textillate();
-        })
-    </script>
+    <div class="ori-service-heading">
+        Hover over this text
+        <div class="ori-service-clip-img"></div>
+    </div>
 </body>
-
 </html>

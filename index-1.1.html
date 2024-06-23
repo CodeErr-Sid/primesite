@@ -337,90 +337,66 @@
 	<!-- End of Founder's note section
 	============================================= -->
 
-	<style>
-		@import url('https://fonts.cdnfonts.com/css/thunder');
 
-		.inner-section-orv {
-			background-color: #1a1a1a;
-		}
+	<!-- Start of clip path animated service section
+	============================================= -->
 
-		.inner-section-orv {
-			display: flex;
-			flex-direction: column;
-			gap: 10rem;
-			position: relative;
-			width: 100%;
-			overflow: hidden;
-			z-index: -1;
-			/* Ensure it's behind other content */
-			background-color: transparent;
-			/* Optional, set the background of the container */
-		}
-
-
-		#orv-upper-text,
-		.orv-bottom-text {
-			padding: 1em 2.9em;
-		}
-
-		#orv-upper-text p {
-			font-family: 'thunder', sans-serif;
-			font-size: clamp(2rem, 5vw, 8rem);
-			width: 45%;
-			font-weight: 900;
-			letter-spacing: -9px;
-		}
-
-		.orv-bottom-text {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: end;
-		}
+	<section class="ori-services-outer-section">
+		<section class="ori-services-inner-section">
+			<div class="ori-service-primary-header">
+				<h1>services</h1>
+				<h1>see projects &rarr;</h1>
+			</div>
+			<div class="ori-service-content">
+				<h1 class="ori-service-element">
+					<span class="ori-service-number">02</span>
+					<span class="ori-service-heading">UI/UX DESIGN
+						<div class="ori-service-heading-image" id="ori-ui-ux-design" style="  background: url('../../assets/img/custom/ux-design2.webp') no-repeat center center/contain;"></div>
+					</span>
+				</h1>
+				<h1 class="ori-service-element" style="gap: 13%;">
+					<span class="ori-service-heading">BRANDING
+						<div class="ori-service-heading-image" id="ori-branding" style="  background: url('../../assets/img/custom/branding2.webp') no-repeat center center/contain;"></div>
+					</span>
+					<span class="ori-service-number">01</span>
+				</h1>
+				<h1 class="ori-service-element" >
+					<span class="ori-service-number">03</span>
+					<span class="ori-service-heading">DEVELOPMENT
+						<div class="ori-service-heading-image" id="ori-development" style="  background: url('../../assets/img/custom/development2.webp') no-repeat center center/contain;"></div>
+					</span>
+				</h1>
+			</div>
+		<div class="ori-services-footer">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo minima accusantium obcaecati animi placeat necessitatibus ex libero, commodi aperiam.</p>
+			<button class="getproposal">get your proposal</button>
+		</div>
+		</section>
+	</section>
 
 
-		.orv-bottom-left .orv-email {
-			margin: 0;
-			font-size: 2.5rem;
-		}
+	<!-- End of clip path animated service section
+	============================================= -->
 
-		.orv-bottom-right .orv-lc {
-			margin: 0;
-			font-size: 3rem;
-			text-transform: uppercase;
-			border-bottom: 3px solid white;
-		}
 
-		.inner-section-orv video {
-			width: 70%;
-			/* Reduce video size to 50% */
-			height: auto;
-			/* Maintain aspect ratio */
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			opacity: 0.7;
-			/* Optional: Adjust the opacity of the video */
-		}
-	</style>
+
 
 	<!-- Start of object roation video section
 	============================================= -->
 	<section class="outer-section-orv">
 		<section class="inner-section-orv">
 			<div id="orv-upper-text">
-				<p class="reveal-type" data-bg-color="black" data-fg-color="#fff">
+				<p class="reveal-type" data-bg-color="gray" data-fg-color="#fff">
 					HAVE A PROJECT IDEA? LET'S TURN IT INTO LIFE
 				</p>
 			</div>
 			<div class="orv-bottom-text">
 				<div class="orv-bottom-left">
 					<p>say hi</p>
-					<p class="orv-email ori-tlt">primesiteinnovations@gmail.com</p>
+					<p class="orv-email">primesiteinnovations@gmail.com</p>
 				</div>
 				<div class="orv-bottom-right">
-					<p class="orv-lc oritlt">Let's collabrate</p>
+					<p class="ori-tlt orv-lc" data-in-effect="fadeInUp">Let's collabrate</p>
 				</div>
 			</div>
 			<video autoplay loop muted playsinline>
@@ -1121,11 +1097,7 @@
 
 	<!-- Getin touch -->
 
-	<div class="container" style="margin-top: -50px; margin-bottom: 70px;">
-		<div class="ori-footer-title text-center text-uppercase">
-			<h2>Get In <span>Touch</span> <i class="fas fa-arrow-right"></i></h2>
-		</div>
-	</div>
+
 
 	<section class="Form-teaser">
 		<div class="teaser-section">
@@ -1155,6 +1127,14 @@
 
 	<!-- Start of Footer section
 	============================================= -->
+	<!-- Cta section start -->
+	<section class="ori-cta">
+		<div class="ori-container">
+			<h1>Lets Create an measurable impact on your business</h1>
+			<button>connect with us</button>
+		</div>
+	</section>
+	<!-- Cta section end -->
 
 
 	<footer class="footer8">
@@ -1203,36 +1183,9 @@
 	<script src="assets/js/jquery.min.js"></script>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script>
-		var jq371 = jQuery.noConflict(true);
-	</script>
 	<script src="assets/textillate/jquery.fittext.js"></script>
 	<script src="assets/textillate/jquery.lettering.js"></script>
 	<script src="assets/textillate/jquery.textillate.js"></script>
-	<script>
-		jq371(document).ready(function () {
-
-			console.log("Document ready. Using jQuery version:", jq371.fn.jquery);
-
-			jq371('.ori-tlt').mouseenter(function () {
-				console.log("Mouse entered .ori-tlt element.");
-				jq371(this).textillate({
-					in: {
-						effect: 'fadeInUp', // Use fadeInUp effect
-						delayScale: 1.5,    // Delay between each letter
-						delay: 50           // Delay in milliseconds
-					},
-					loop: false           // Do not loop the animation
-				});
-			}).mouseleave(function () {
-				// Mouseleave event handler
-				console.log("Mouse left .ori-tlt element.");
-				jq371(this).textillate('out');
-			});
-		})
-	</script>
-
 
 	<script src="assets/js/jquery-ui.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>

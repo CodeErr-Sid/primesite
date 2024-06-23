@@ -95,6 +95,8 @@ Font load
 
 ===========*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/thunder');
+
 
 /* * {} */
 
@@ -5456,6 +5458,8 @@ select:visited {
 /*----------------------------------------------------*/
 
 /* custom classes */
+
+/* founders note */
 .bg-black {
   background-color: black;
 }
@@ -5533,6 +5537,233 @@ select:visited {
 .founder-img img {
   border-radius: 5rem;
 }
+
+/* services section */
+
+.ori-services-outer-section{
+  background-color: #000000;
+}
+
+
+.ori-services-inner-section {
+  padding: 2em;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background-color: #1a1a1a;
+}
+
+.ori-service-primary-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+  margin-bottom: 6.5em;
+  padding: 1rem 0;
+}
+
+.ori-service-primary-header h1{
+  font-size: 1.2rem;
+}
+
+.ori-service-element {
+  display: flex;
+  gap: 8%;
+  margin: 0 auto;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ori-service-number {
+  color: transparent;
+}
+
+.ori-service-heading {
+  font-size: 7rem;
+  position: relative;
+}
+
+
+.ori-service-heading:hover .ori-service-heading-image {
+  animation: clipFadeIn 1s forwards;
+}
+
+.ori-service-heading-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  width: 300px;
+  height: 400px;
+  background-size: contain;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+}
+
+
+
+@keyframes clipFadeIn {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+.ori-services-footer{
+  border-top: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+  margin-top: 6.5em;
+}
+
+.ori-services-footer p{
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.ori-services-footer .getproposal{
+  border: 1px solid white;
+  color: white;
+  padding: 1em;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  background: inherit;
+}
+
+
+/* rotating object video section */
+
+
+.outer-section-orv {
+  background-color: #1a1a1a;
+}
+
+.inner-section-orv {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* Ensure it's behind other content */
+  background-color: transparent;
+  background-color: #000000;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  /* Optional, set the background of the container */
+}
+
+
+#orv-upper-text,
+.orv-bottom-text {
+  padding: 1em 2.9em;
+}
+
+#orv-upper-text p {
+  font-family: 'thunder', sans-serif;
+  font-size: clamp(2rem, 5vw, 8rem);
+  width: 45%;
+  font-weight: 900;
+  letter-spacing: -9px;
+}
+
+.orv-bottom-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+
+.orv-bottom-left .orv-email {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.orv-bottom-right .orv-lc {
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid white;
+}
+
+.inner-section-orv video {
+  width: 70%;
+  /* Reduce video size to 50% */
+  height: auto;
+  /* Maintain aspect ratio */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  /* Optional: Adjust the opacity of the video */
+}
+
+/* cta */
+
+.ori-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  position: relative;
+}
+
+.ori-cta::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url('https://codeerr-sid.github.io/EntrepreneursOfMadras/assets/images/backgrounds/cta-bg-2.jpg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: grayscale(1);
+  opacity: .2;
+}
+
+.ori-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ori-container h1 {
+  font-family: "outfit";
+  font-weight: 600;
+  width: 64%;
+  font-size: 3rem;
+}
+
+.ori-container button {
+  height: fit-content;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background: black;
+  color: #c1dd42;
+  border: none;
+  border-radius: 7px;
+}
+
 
 
 /* custom css */

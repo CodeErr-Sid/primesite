@@ -1326,6 +1326,7 @@ Last change:    00/00/00
 	jQuery(document).ready(function (){
 		OriXy.init();
 	});
+	// scroll text animation
 	gsap.registerPlugin(ScrollTrigger)
 
         const splitTypes = document.querySelectorAll('.reveal-type')
@@ -1369,6 +1370,14 @@ Last change:    00/00/00
         }
 
         requestAnimationFrame(raf)
+
+		// text animtion texilliate
+
+		$('.ori-tlt').mouseenter(function () {
+			$(this).textillate('start');
+		}).mouseleave(function(){
+			$(this).textillate('start')
+		})
 
 })();
 
