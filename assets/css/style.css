@@ -15695,3 +15695,298 @@ Font load
   color: white;
   border: 1.5px solid white;
 }
+
+
+/*  pricing section*/
+
+
+
+.pricing-flex {
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+  .pricing-left {
+      padding: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pricing-left {
+      padding: 32px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pricing-left {
+      max-width: none;
+  }
+}
+
+.pricing-left {
+  color: white;
+  background-color: #000;
+  background-image: linear-gradient(#000, #1d1d1d);
+  border: 1px solid #000;
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 1;
+  max-width: 480px;
+  justify-content: space-between;
+  padding: 50px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, .34), 0 50px 50px rgba(0, 0, 0, .2), inset 0 2px 1px rgba(223, 216, 216, 0.818);
+}
+
+.available-pill {
+  color: white;
+  background-color: #ff90e7;
+  border-radius: 100vw;
+  padding: 4px 24px 4px 13px;
+  display: inline-block;
+}
+
+.top-right-element img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.image-79 {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 0;
+}
+
+.price-left-heading {
+  display: block;
+  font-size: 70px;
+  margin: 0;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.pricing__left-card-small-heading.top {
+  margin-bottom: 16px;
+}
+
+.pricing__left-card-small-heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .pricing__left-card-small-heading.top {
+      margin-bottom: 16px;
+  }
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.pricing__left-inside-card {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .14);
+  margin-bottom: 16px;
+  border-radius: 12px;
+  align-items: center;
+  padding: 12px;
+  display: flex;
+}
+
+.pricing__right-card {
+  background-color: white;
+  border-radius: 8px;
+  flex: 1;
+  padding: 50px 50px 20px;
+  color: black;
+}
+
+.heading-right {
+  font-weight: 400;
+  font-size: 42px;
+  letter-spacing: -1px;
+  margin: 10px 0;
+  line-height: 100%;
+}
+
+.pricing__right-top {
+  border-bottom: 1px solid #000;
+  margin-bottom: 32px;
+  padding: 32px 0;
+}
+
+.m-b-0 {
+  margin: 10px 0;
+  font-size: 42px;
+  font-weight: 400px;
+  line-height: 100%;
+}
+
+.p-small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 479px) {
+  .p-small {
+      font-size: 18px;
+  }
+}
+
+.text-span-3 {
+  flex-wrap: wrap;
+}
+
+.pricing__right-bottom {
+  margin: 20px 0;
+}
+
+.pricing__right-grid {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.pricing__right-grid ul {
+  padding: 0;
+  margin: 0;
+  flex: 0 1 calc(50% - 10px);
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .pricing__right-grid ul {
+      flex: 1 0 100%;
+      margin-bottom: 20px;
+  }
+}
+
+.pricing__right-grid ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.pricing__right-grid ul li::before {
+  content: '•';
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.button {
+  color: white !important;
+  background: linear-gradient(#000, #292929);
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 22px 52px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: box-shadow .6s, background-color .6s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .31), inset 0 2px 1px rgba(255, 255, 255, .5);
+}
+
+.button:hover {
+  background: linear-gradient(#292929, #000); /* Example hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), inset 0 2px 1px rgba(255, 255, 255, 0.5); /* More pronounced shadow */
+  opacity: 0.9;
+  color: white;
+}
+
+.text-block-4 {
+  font-size: 14px;
+}
+
+.link-2 {
+  color: #000;
+  text-decoration: underline;
+}
+
+.toggle {
+  background-color: #000;
+  width: 100%;
+  max-width: 210px;
+  border-radius: 30px;
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.standard {
+  background-color: #191919;
+  width: 50%;
+  height: 35px;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  line-height: 35px; /* Center text vertically */
+  transition: all 0.3s ease;
+}
+
+.text-block {
+  background-color: #ebd406;
+  width: 50%;
+  height: 35px;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  line-height: 35px; /* Center text vertically */
+  transition: all 0.3s ease;
+}
+
+.tab__bolt {
+  display: flex;
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 767px) {
+  .toggle {
+      max-width: none;
+  }
+  
+  .standard, .text-block {
+      width: 100px;
+  }
+}
