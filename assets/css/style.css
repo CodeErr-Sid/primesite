@@ -15920,6 +15920,7 @@ a {
 .pricing__right-grid {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pricing__right-grid ul {
@@ -15927,8 +15928,8 @@ a {
   margin: 0;
   flex: 0 1 calc(50% - 10px);
   list-style-type: none;
-  flex-wrap: wrap;
 }
+
 
 @media screen and (max-width: 767px) {
   .pricing__right-grid ul {
@@ -16040,4 +16041,5 @@ a {
 
 .active-class{
   background-color: #ebd406;
+  color: black;
 }

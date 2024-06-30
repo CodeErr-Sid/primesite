@@ -1683,10 +1683,10 @@ $(document).ready(function () {
 
   // Click event for Standard button
   $(".standard").click(function () {
-    $(".toggle-btn").removeClass("active-class");
-    $(this).addClass("active-class");
+    if (!$(this).hasClass("active-class")) {
+      $(".toggle-btn").removeClass("active-class");
+      $(this).addClass("active-class");
 
-    if ($(this).hasClass("active-class")) {
       $("#pricingTab1Container").show();
       $("#pricingTab2Container").hide();
 
@@ -1696,10 +1696,10 @@ $(document).ready(function () {
 
   // Click event for Pro button
   $(".pro").click(function () {
-    $(".toggle-btn").removeClass("active-class");
-    $(this).addClass("active-class");
+    if (!$(this).hasClass("active-class")) {
+      $(".toggle-btn").removeClass("active-class");
+      $(this).addClass("active-class");
 
-    if ($(this).hasClass("active-class")) {
       $("#pricingTab1Container").hide();
       $("#pricingTab2Container").show();
 
