@@ -15736,7 +15736,6 @@ Font load
   border: 1px solid #000;
   border-radius: 8px;
   flex-direction: column;
-  flex: 1;
   max-width: 480px;
   justify-content: space-between;
   padding: 50px;
@@ -15815,7 +15814,6 @@ a {
 .pricing__right-card {
   background-color: white;
   border-radius: 8px;
-  flex: 1;
   padding: 50px 50px 20px;
   color: black;
 }
