@@ -35,7 +35,8 @@
 	<div class="up">
 		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
 	</div>
-	<div class="cursor"></div>
+	
+	<div id="cursor"></div>
 	<!-- Start of header section
 	============================================= -->
 	<header id="ori-header" class="ori-header-section sticky-on header-style-one bg-transparent">
@@ -990,82 +991,65 @@
 				<h4 class="heading-right">Membership</h4>
 				<div class="tabs w-tabs">
 					<div class="toggle">
-						<div class="standard">Standard</div>
-						<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de1509b0728fa49d0a4159_22.svg"
-							loading="lazy" alt="" class="tab__bolt" />
-						<div class="text-block">Pro</div>
-						</a>
+						<div class="standard toggle-btn" >Standard</div>
+						<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de1509b0728fa49d0a4159_22.svg" loading="lazy" alt="" class="tab__bolt" />
+						<div class="pro toggle-btn">Pro</div>
 					</div>
+					
 					<div class="w-tab-content">
 						<div data-w-tab="Tab 1" class="w-tab-pane w--tab-active" role="tabpanel">
 							<div class="pricing__right-top">
-								<h4 class="m-b-0">$4,995<span class="per-month">/m</span></h4>
-								<p class="p-small smaller smallest no">
-									One request at a time.
-									<span class="text-span-3">Pause or cancel anytime.</span>
-								</p>
+								<h4 class="m-b-0" id="pricingTab1"></h4>
+								<p class="p-small smaller smallest no" id="priceDescriptionTab1"></p>
 							</div>
-
+						
 							<div class="pricing__right-bottom">
-								<p class="p-small">What's included</p>
+								<p class="p-small smaller smallest">What's included</p>
 								<div class="w-layout-grid pricing__right-grid">
-									<ul role="list" class="left-column">
-										<li>
-											<p class="p-small">
-												One request at a time
-											</p>
-										</li>
-										<li>
-											<p class="p-small">
-												Average 48 hour delivery
-											</p>
-										</li>
-										<li>
-											<p class="p-small">Unlimited brands</p>
-										</li>
-										<li>
-											<div class="div-block-24">
-												<p class="p-small web">
-													Webflow development
-												</p>
-											</div>
-										</li>
+									<ul id="leftColumnTab1" role="list" class="left-column">
+										<!-- Left column items will be dynamically added here -->
 									</ul>
-									<ul role="list" class="right-column">
-										<li>
-											<p class="p-small">
-												Unlimited stock photos
-											</p>
-										</li>
-										<li>
-											<p class="p-small">Unlimited users</p>
-										</li>
-										<li>
-											<p class="p-small web">
-												Pause or cancel anytime
-											</p>
-										</li>
+									<ul id="rightColumnTab1" role="list" class="right-column">
+										<!-- Right column items will be dynamically added here -->
 									</ul>
 								</div>
 							</div>
-
-							<div class="button__container">
-								<div class="button__wrapper">
-									<a href="https://buy.stripe.com/fZe28BaiLfOO99e146" class="button w-inline-block">
-										<div>Get started</div>
-									</a>
-									<div class="text-block-4">
-										or
-										<a href="https://calendly.com/designjoy/designjoy-intro-1?month=2024-02"
-											target="_blank" class="link-2">book a call</a>
-									</div>
+						</div>
+						
+						<div data-w-tab="Tab 2" class="w-tab-pane" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-1">
+							<div class="pricing__right-top2">
+								<h4 class="m-b-0" id="pricingTab"></h4>
+								<p class="p-small smaller smallest no" id="priceDescriptionTab2"></p>
+							</div>
+						
+							<div class="pricing__right-bottom">
+								<p class="p-small smaller smallest" id="whatsIncludedTitleTab2"></p>
+								<div class="w-layout-grid pricing__right-grid">
+									<ul id="leftColumnTab2" role="list" class="left-column">
+										<!-- Left column items will be dynamically added here -->
+									</ul>
+									<ul id="rightColumnTab2" role="list" class="right-column">
+										<!-- Right column items will be dynamically added here -->
+									</ul>
 								</div>
 							</div>
-
+						</div>
+					</div>
+			
+					<div class="button__container">
+						<div class="button__wrapper">
+							<a href="https://buy.stripe.com/fZe28BaiLfOO99e146" class="button w-inline-block">
+								<div>Get started</div>
+							</a>
+							<div class="text-block-4">
+								or
+								<a href="#" class="link-2">book a call</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 
 		</div>
 		<div class="line_animation">

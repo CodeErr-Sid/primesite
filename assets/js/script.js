@@ -1529,19 +1529,6 @@ Last change:    00/00/00
     });
 })();
 
-// Toggle button animation
-$(document).ready(function () {
-  $(".standard").click(function () {
-    $(".standard").css("background-color", "#ebd406");
-    $(".text-block").css("background-color", "black");
-  });
-
-  $(".text-block").click(function () {
-    $(".text-block").css("background-color", "#ebd406");
-    $(".standard").css("background-color", "black");
-  });
-});
-
 // hover effects
 $(document).ready(function () {
   $(".hover-effect").each(function () {
@@ -1572,5 +1559,151 @@ $(document).ready(function () {
         element.textillate("out");
       }
     );
+  });
+});
+
+// Select the body element
+const body = document.body;
+const cursor = document.getElementById("cursor");
+
+// Move the cursor based on mouse position over the body
+body.addEventListener("mousemove", handleMouseMove);
+
+// Event: mouse move over the body
+function handleMouseMove(event) {
+  let top = event.pageY - cursor.clientHeight / 2;
+  let left = event.pageX - cursor.clientWidth / 2;
+
+  cursor.style.top = top + "px";
+  cursor.style.left = left + "px";
+}
+
+// Event: mouse enter on body (simulate hover effect)
+body.addEventListener("mouseenter", handleMouseEnter);
+
+// Event: mouse leave from body (remove hover effect)
+body.addEventListener("mouseleave", handleMouseLeave);
+
+// Event: mouse enter on body
+function handleMouseEnter() {
+  cursor.classList.add("hovered");
+}
+
+// Event: mouse leave from body
+function handleMouseLeave() {
+  cursor.classList.remove("hovered");
+}
+
+$(document).ready(function () {
+  const pricingInfoTab1 = {
+    pricing: "$4,995",
+    priceDescription: "One request at a time. Pause or cancel anytime.",
+    whatsIncluded: {
+      whatsIncludedTitle: "What's included",
+      whatsIncludedList: [
+        "One request at a time",
+        "Average 48 hour delivery",
+        "Unlimited brands",
+        "Webflow development",
+      ],
+      whatsIncludedListRight: [
+        "Unlimited stock photos",
+        "Unlimited users",
+        "Pause or cancel anytime",
+      ],
+    },
+  };
+
+  const pricingInfoTab2 = {
+    pricing: "$7,995",
+    priceDescription: "Double the requests. Pause or cancel anytime.",
+    whatsIncluded: {
+      whatsIncludedTitle: "What's included",
+      whatsIncludedList: [
+        "Two requests at a time",
+        "Average 48 hour delivery",
+        "Unlimited brands",
+        "Webflow development",
+      ],
+      whatsIncludedListRight: [
+        "Unlimited stock photos",
+        "Unlimited users",
+        "Pause or cancel anytime",
+      ],
+    },
+  };
+
+  // Function to update Tab 1 content
+  function updateTab1Content(pricingInfo) {
+    $("#pricingTab1").text(pricingInfo.pricing);
+    $("#priceDescriptionTab1").text(pricingInfo.priceDescription);
+
+    const leftColumnTab1 = $("#leftColumnTab1").empty();
+    pricingInfo.whatsIncluded.whatsIncludedList.forEach((item) => {
+      leftColumnTab1.append(
+        `<li><p class="p-small smaller smallest">${item}</p></li>`
+      );
+    });
+
+    const rightColumnTab1 = $("#rightColumnTab1").empty();
+    pricingInfo.whatsIncluded.whatsIncludedListRight.forEach((item) => {
+      rightColumnTab1.append(
+        `<li><p class="p-small smaller smallest">${item}</p></li>`
+      );
+    });
+  }
+
+  // Function to update Tab 2 content
+  function updateTab2Content(pricingInfo) {
+    $("#pricingTab2").text(pricingInfo.pricing);
+    $("#priceDescriptionTab2").text(pricingInfo.priceDescription);
+
+    const leftColumnTab2 = $("#leftColumnTab2").empty();
+    pricingInfo.whatsIncluded.whatsIncludedList.forEach((item) => {
+      leftColumnTab2.append(
+        `<li><p class="p-small smaller smallest">${item}</p></li>`
+      );
+    });
+
+    const rightColumnTab2 = $("#rightColumnTab2").empty();
+    pricingInfo.whatsIncluded.whatsIncludedListRight.forEach((item) => {
+      rightColumnTab2.append(
+        `<li><p class="p-small smaller smallest">${item}</p></li>`
+      );
+    });
+  }
+
+  // Initial load of Tab 1 pricing info
+  updateTab1Content(pricingInfoTab1);
+
+  // Set the default active class to Standard
+  $(".standard").addClass("active-class");
+  $("#pricingTab1Container").show();
+  $("#pricingTab2Container").hide();
+
+  // Click event for Standard button
+  $(".standard").click(function () {
+    $(".toggle-btn").removeClass("active-class");
+    $(this).addClass("active-class");
+
+    if ($(this).hasClass("active-class")) {
+      $("#pricingTab1Container").show();
+      $("#pricingTab2Container").hide();
+
+      updateTab1Content(pricingInfoTab1);
+    }
+  });
+
+  // Click event for Pro button
+  $(".pro").click(function () {
+    $(".toggle-btn").removeClass("active-class");
+    $(this).addClass("active-class");
+
+    if ($(this).hasClass("active-class")) {
+      $("#pricingTab1Container").hide();
+      $("#pricingTab2Container").show();
+
+      updateTab2Content(pricingInfoTab2);
+    }
   });
 });
