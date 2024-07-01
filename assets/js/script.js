@@ -1734,7 +1734,7 @@ $(document).ready(function () {
       progress++;
       setTimeout(simulateLoading, 50); // Adjust the timeout for smoother animation
     } else {
-      $(".page-wrapper").addClass("hide"); // Trigger translateY(-100%) animation
+      $(".page-loader-container").slideUp("smooth")
       $(".ori-header-section").css("opacity", 1); // Show the navbar
     }
   }

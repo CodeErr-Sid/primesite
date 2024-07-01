@@ -110,6 +110,7 @@ Font load
     scroll-behavior: inherit;
   }
 }
+
 html {
   position: relative;
   height: 100%;
@@ -134,7 +135,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-  cursor: none;
+  /* cursor: none; */
 }
 
 body .container {
@@ -294,7 +295,8 @@ select:visited {
   pointer-events: none;
   z-index: 1000;
   transform: translate(-50%, -50%);
-  transition: transform 0.2s ease-out; /* Transition for zoom effect */
+  transition: transform 0.2s ease-out;
+  /* Transition for zoom effect */
 }
 
 .cursor-shadow {
@@ -306,7 +308,8 @@ select:visited {
   pointer-events: none;
   z-index: 999;
   transform: translate(-50%, -50%);
-  transition: transform 0.2s ease-out; /* Transition for zoom effect */
+  transition: transform 0.2s ease-out;
+  /* Transition for zoom effect */
 }
 
 
@@ -329,7 +332,7 @@ select:visited {
   position: relative;
   display: inline-block;
   border-right: 1px solid #1C1C1C;
-  
+
 }
 
 .line_animation .line_area:before {
@@ -690,7 +693,7 @@ select:visited {
 
 .ori-main-navigation-area .navbar-nav {
   display: inherit;
-  
+
 }
 
 .ori-main-navigation-area .dropdown {
@@ -1848,7 +1851,7 @@ select:visited {
 
 .ori-slider-content-1 {
   z-index: 1;
-  padding: 120px 50px;
+  padding: 1rem 3.5rem;
 }
 
 .ori-slider-content-1 .ori-slider-img {
@@ -5499,7 +5502,7 @@ select:visited {
 
 /* services section */
 
-.ori-services-outer-section{
+.ori-services-outer-section {
   background-color: #000000;
 }
 
@@ -5521,7 +5524,7 @@ select:visited {
   padding: 1rem 0;
 }
 
-.ori-service-primary-header h1{
+.ori-service-primary-header h1 {
   font-size: 1.2rem;
 }
 
@@ -5580,7 +5583,7 @@ select:visited {
   }
 }
 
-.ori-services-footer{
+.ori-services-footer {
   border-top: 2px solid white;
   display: flex;
   flex-direction: row;
@@ -5590,7 +5593,7 @@ select:visited {
   margin-top: 6.5em;
 }
 
-.ori-services-footer p{
+.ori-services-footer p {
   margin: 0;
   padding: 0;
   width: 50%;
@@ -5598,7 +5601,7 @@ select:visited {
   font-weight: 100;
 }
 
-.ori-services-footer .getproposal{
+.ori-services-footer .getproposal {
   border: 1px solid white;
   color: white;
   padding: 1em;
@@ -5686,7 +5689,8 @@ select:visited {
   align-items: center;
   min-height: 40vh;
   position: relative;
-  overflow: hidden; /* Ensure no overflow issues */
+  overflow: hidden;
+  /* Ensure no overflow issues */
 }
 
 .ori-cta::before {
@@ -5707,7 +5711,7 @@ select:visited {
   content: '';
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); 
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -5718,7 +5722,7 @@ select:visited {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  position: relative; 
+  position: relative;
   z-index: 3;
 
 }
@@ -5728,7 +5732,7 @@ select:visited {
   font-weight: 600;
   width: 64%;
   font-size: 3rem;
-  color: white; 
+  color: white;
 }
 
 .ori-container button {
@@ -5739,8 +5743,8 @@ select:visited {
   color: #c1dd42;
   border: none;
   border-radius: 7px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
- 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .ori-container button:hover {
@@ -15528,6 +15532,7 @@ Font load
   position: relative;
   width: 50%;
 }
+
 /* 
 .Form-teaser {
   padding: 50px;
@@ -15549,9 +15554,9 @@ Font load
 .schedule-button {
   position: absolute;
   font-weight: 600; */
-  /* bottom: 60px;
+/* bottom: 60px;
   left: 50%; */
-  /* transform: translateX(-50%);
+/* transform: translateX(-50%);
   padding: 15px 25px;
   background-color: #c1dd42;
   color: black;
@@ -15696,19 +15701,19 @@ Font load
 
 @media screen and (max-width: 479px) {
   .pricing-left {
-      padding: 24px;
+    padding: 24px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .pricing-left {
-      padding: 32px;
+    padding: 32px;
   }
 }
 
 @media screen and (max-width: 991px) {
   .pricing-left {
-      max-width: none;
+    max-width: none;
   }
 }
 
@@ -15770,7 +15775,7 @@ Font load
 
 @media screen and (max-width: 991px) {
   .pricing__left-card-small-heading.top {
-      margin-bottom: 16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -15833,7 +15838,7 @@ a {
 
 @media screen and (max-width: 479px) {
   .p-small {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
 
@@ -15861,8 +15866,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .pricing__right-grid ul {
-      flex: 1 0 100%;
-      margin-bottom: 20px;
+    flex: 1 0 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -15891,7 +15896,8 @@ a {
 .button__wrapper {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adjust the gap as needed */
+  gap: 10px;
+  /* Adjust the gap as needed */
 }
 
 
@@ -15908,8 +15914,10 @@ a {
 }
 
 .button:hover {
-  background: linear-gradient(#292929, #000); /* Example hover effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), inset 0 2px 1px rgba(255, 255, 255, 0.5); /* More pronounced shadow */
+  background: linear-gradient(#292929, #000);
+  /* Example hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), inset 0 2px 1px rgba(255, 255, 255, 0.5);
+  /* More pronounced shadow */
   opacity: 0.9;
   color: white;
 }
@@ -15936,14 +15944,16 @@ a {
   padding: 0 10px;
 }
 
-.standard, .pro {
+.standard,
+.pro {
   background-color: #191919;
   width: 50%;
   height: 35px;
   border-radius: 30px;
   color: white;
   text-align: center;
-  line-height: 35px; /* Center text vertically */
+  line-height: 35px;
+  /* Center text vertically */
   transition: all 0.3s ease;
 }
 
@@ -15959,15 +15969,16 @@ a {
 /* Media query for responsiveness */
 @media screen and (max-width: 767px) {
   .toggle {
-      max-width: none;
+    max-width: none;
   }
-  
-  .standard, .text-block {
-      width: 100px;
+
+  .standard,
+  .text-block {
+    width: 100px;
   }
 }
 
-.active-class{
+.active-class {
   background-color: #C1DD42;
   color: black;
 }
@@ -15983,8 +15994,9 @@ a {
   overflow: hidden;
 }
 
-.page-wrapper.hide {
-  transform: translateY(-100%);
+
+.page-loader-container.hide {
+  display: none;
 }
 
 /* .text-animation {
@@ -15997,7 +16009,8 @@ a {
 }
 
 .text-animation span {
-  transition: color 0.5s linear; /* Smooth transition for each character */
+  transition: color 0.5s linear;
+  /* Smooth transition for each character */
 }
 
 .page-loader-container {
@@ -16131,6 +16144,7 @@ a {
   .hide-mobile-landscape {
     display: none;
   }
+
   .text-anime-opacity {
     font-size: 1rem;
     font-weight: 400;
@@ -16154,22 +16168,28 @@ a {
     font-size: 6rem;
     letter-spacing: -0.25rem;
   }
+
   .hide-mobile-landscape {
     display: block;
     font-size: 1.5rem;
   }
+
   .show-mob {
     display: none !important;
   }
 }
+
 @media screen and (min-width: 992px) {
   .show-mob {
-    display: none !important; /* Ensure to include a space before !important */
+    display: none !important;
+    /* Ensure to include a space before !important */
   }
 
   .loader-text {
-    font-size: 2rem; /* Adjust font size as needed */
-    margin: 20px; /* Add margin or padding as per your design */
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    margin: 20px;
+    /* Add margin or padding as per your design */
   }
 
   .hide-mobile-landscape {
@@ -16179,8 +16199,10 @@ a {
 
   .super-text-xl {
     font-size: 6rem;
-    letter-spacing: -0.25rem; /* Adjust letter-spacing value */
+    letter-spacing: -0.25rem;
+    /* Adjust letter-spacing value */
   }
+
   .text-anime-opacity {
     font-size: 1rem;
     font-weight: 400;
