@@ -1743,67 +1743,64 @@ $(document).ready(function () {
 });
 
 // cursor
-$(document).ready(function () {
-  let cursor = $(".cursor");
-  let cursorShadow = $(".cursor-shadow");
-  let shadowSpeed = 0.1; // Adjust the speed of the shadow's follow effect
+// $(document).ready(function () {
+//   let cursor = $(".cursor");
+//   let cursorShadow = $(".cursor-shadow");
+//   let shadowSpeed = 0.1;
 
-  // Wrap each text content in a span for zoom effect
-  $("h1, h2, h3, h4, h5, h6, p, a, li").each(function () {
-    let $this = $(this);
-    let words = $this.text().split(" ");
-    $this.empty();
-    $.each(words, function (i, word) {
-      $this.append(
-        $("<span>")
-          .addClass("zoom-target")
-          .text(word + " ")
-      );
-    });
-  });
+//   $("h1, h2, h3, h4, h5, h6, p, a, li").each(function () {
+//     let $this = $(this);
+//     let words = $this.text().split(" ");
+//     $this.empty();
+//     $.each(words, function (i, word) {
+//       $this.append(
+//         $("<span>")
+//           .addClass("zoom-target")
+//           .text(word + " ")
+//       );
+//     });
+//   });
 
-  $(document).mousemove(function (e) {
-    let mouseX = e.pageX;
-    let mouseY = e.pageY;
+//   $(document).mousemove(function (e) {
+//     let mouseX = e.pageX;
+//     let mouseY = e.pageY;
 
-    cursor.css({
-      left: mouseX,
-      top: mouseY,
-    });
+//     cursor.css({
+//       left: mouseX,
+//       top: mouseY,
+//     });
 
-    cursorShadow.css({
-      left: mouseX,
-      top: mouseY,
-      transition: `left ${shadowSpeed}s ease-out, top ${shadowSpeed}s ease-out`,
-    });
-  });
+//     cursorShadow.css({
+//       left: mouseX,
+//       top: mouseY,
+//       transition: `left ${shadowSpeed}s ease-out, top ${shadowSpeed}s ease-out`,
+//     });
+//   });
 
-  // Add hover effect for zooming
-  $(document).on("mouseenter", ".zoom-target", function () {
-    let fontSize = $(this).css("font-size");
-    cursor.css({
-      transform: `translate(-50%, -50%) scale(${calculateScale(fontSize)})`,
-    });
-    cursorShadow.css({
-      transform: `translate(-50%, -50%) scale(${
-        calculateScale(fontSize) * 1.5
-      })`,
-    });
-  });
+//   $(document).on("mouseenter", ".zoom-target", function () {
+//     let fontSize = $(this).css("font-size");
+//     cursor.css({
+//       transform: `translate(-50%, -50%) scale(${calculateScale(fontSize)})`,
+//     });
+//     cursorShadow.css({
+//       transform: `translate(-50%, -50%) scale(${
+//         calculateScale(fontSize) * 1.5
+//       })`,
+//     });
+//   });
 
-  $(document).on("mouseleave", ".zoom-target", function () {
-    cursor.css({
-      transform: "translate(-50%, -50%) scale(1)",
-    });
-    cursorShadow.css({
-      transform: "translate(-50%, -50%) scale(1)",
-    });
-  });
+//   $(document).on("mouseleave", ".zoom-target", function () {
+//     cursor.css({
+//       transform: "translate(-50%, -50%) scale(1)",
+//     });
+//     cursorShadow.css({
+//       transform: "translate(-50%, -50%) scale(1)",
+//     });
+//   });
 
-  // Function to calculate scale based on font-size
-  function calculateScale(fontSize) {
-    let baseSize = parseFloat($("body").css("font-size"));
-    let currentSize = parseFloat(fontSize);
-    return currentSize / baseSize;
-  }
-});
+//   function calculateScale(fontSize) {
+//     let baseSize = parseFloat($("body").css("font-size"));
+//     let currentSize = parseFloat(fontSize);
+//     return currentSize / baseSize;
+//   }
+// });
