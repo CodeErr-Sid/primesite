@@ -1707,3 +1707,37 @@ $(document).ready(function () {
     }
   });
 });
+
+// loader page
+
+$(document).ready(function () {
+  let progress = 0;
+  let progressBar = $(".loader_number");
+  let textAnimation = $(".text-animation");
+  let text = textAnimation.text();
+  textAnimation.html(""); // Clear the text to append colored characters
+
+  // Append each character as a span
+  for (let i = 0; i < text.length; i++) {
+    textAnimation.append(`<span style="color: white;">${text[i]}</span>`);
+  }
+
+  let spans = textAnimation.children();
+
+  function simulateLoading() {
+    if (progress <= 100) {
+      progressBar.text(progress);
+      let index = Math.floor((progress / 100) * spans.length);
+      if (index < spans.length) {
+        spans.eq(index).css("color", "gray");
+      }
+      progress++;
+      setTimeout(simulateLoading, 50); // Adjust the timeout for smoother animation
+    } else {
+      $(".page-wrapper").addClass("hide"); // Trigger translateY(-100%) animation
+      $(".ori-header-section").css("opacity", 1); // Show the navbar
+    }
+  }
+
+  simulateLoading();
+});
