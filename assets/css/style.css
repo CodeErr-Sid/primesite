@@ -134,7 +134,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-
+  cursor: none;
 }
 
 body .container {
@@ -285,107 +285,30 @@ select:visited {
   margin-bottom: 0;
 }
 
-#cursor {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  top: 50%;
-  left: 50%;
-  border-radius: 45% 77% 75% 45% / 45% 45% 75% 75%;
-  background: #C1DD42;
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #C1DD42;
+  border-radius: 50%;
   pointer-events: none;
-  mix-blend-mode: difference;
-  z-index: 9999;
-  transition: transform 0.3s ease;
-  transform-origin: center;
-  transform: translate(-50%, -50%) scale(1);
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out; /* Transition for zoom effect */
 }
 
-
-#cursor.hovered {
-  transform: translate(-50%, -50%) scale(1.5);
-  animation: animateBlob 3s infinite linear;
+.cursor-shadow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out; /* Transition for zoom effect */
 }
 
-@keyframes animateBlob {
-  0%, 100% {
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  }
-  25% {
-    border-radius: 72% 28% 30% 70% / 30% 28% 72% 70%;
-  }
-  50% {
-    border-radius: 53% 47% 31% 69% / 48% 78% 30% 52%;
-  }
-  75% {
-    border-radius: 42% 58% 68% 32% / 68% 52% 48% 32%;
-  }
-}
-
-
-@-webkit-keyframes line_animation {
-  0% {
-    top: 0px;
-    opacity: 1;
-  }
-
-  50% {
-    top: 50%;
-  }
-
-  100% {
-    top: 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes line_animation {
-  0% {
-    top: 0px;
-    opacity: 1;
-  }
-
-  50% {
-    top: 50%;
-  }
-
-  100% {
-    top: 100%;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes line_animation_2 {
-  0% {
-    opacity: 1;
-    bottom: 0px;
-  }
-
-  50% {
-    bottom: 50%;
-  }
-
-  100% {
-    bottom: 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes line_animation_2 {
-  0% {
-    opacity: 1;
-    bottom: 0px;
-  }
-
-  50% {
-    bottom: 50%;
-  }
-
-  100% {
-    bottom: 100%;
-    opacity: 1;
-  }
-}
 
 .line_animation {
   top: 0px;
@@ -665,8 +588,8 @@ select:visited {
   width: 100%;
   position: absolute;
   padding: 40px 100px;
-    transition: opacity 0.5s ease-out;
-    opacity: 0;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
 }
 
 .ori-header-section .ori-megamenu {
@@ -16045,7 +15968,7 @@ a {
 }
 
 .active-class{
-  background-color: #ebd406;
+  background-color: #C1DD42;
   color: black;
 }
 
