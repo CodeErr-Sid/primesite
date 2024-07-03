@@ -53,8 +53,8 @@ Last change:    00/00/00
       startLoader: function () {
         $(document).ready(function () {
           function init_loader() {
-            $(".page-wrapper").removeClass("hide"); // Remove hide class to reveal main content
-            $("html, body").animate({ scrollTop: 0 }, 500); // Optional: Scroll to top smoothly
+
+            $(".page-wrapper").slideUp('smooth') // Remove hide class to reveal main content
           }
 
           function incrementNumber() {
@@ -1605,36 +1605,7 @@ $(document).ready(function () {
 });
 
 // Select the body element
-const body = document.body;
-const cursor = document.getElementById("cursor");
 
-// Move the cursor based on mouse position over the body
-body.addEventListener("mousemove", handleMouseMove);
-
-// Event: mouse move over the body
-function handleMouseMove(event) {
-  let top = event.pageY - cursor.clientHeight / 2;
-  let left = event.pageX - cursor.clientWidth / 2;
-
-  cursor.style.top = top + "px";
-  cursor.style.left = left + "px";
-}
-
-// Event: mouse enter on body (simulate hover effect)
-body.addEventListener("mouseenter", handleMouseEnter);
-
-// Event: mouse leave from body (remove hover effect)
-body.addEventListener("mouseleave", handleMouseLeave);
-
-// Event: mouse enter on body
-function handleMouseEnter() {
-  cursor.classList.add("hovered");
-}
-
-// Event: mouse leave from body
-function handleMouseLeave() {
-  cursor.classList.remove("hovered");
-}
 
 $(document).ready(function () {
   const pricingInfoTab1 = {
@@ -1749,3 +1720,4 @@ $(document).ready(function () {
     }
   });
 });
+
