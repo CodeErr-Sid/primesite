@@ -16,7 +16,7 @@ Last change:    00/00/00
 
     Basic: {
       init: function () {
-        this.preloader();
+        this.startLoader();
         this.BackgroundImage();
         this.Animation();
         this.StickyHeader();
@@ -49,13 +49,55 @@ Last change:    00/00/00
         this.AgencySponsorSlider();
         this.AgencyProjectSlider();
       },
-      preloader: function () {
-        jQuery(window).on("load", function () {
-          jQuery("#preloader").fadeOut("slow", function () {
-            jQuery(this).remove();
-          });
+
+      startLoader: function () {
+        $(document).ready(function () {
+          function init_loader() {
+            $(".page-wrapper").removeClass("hide"); // Remove hide class to reveal main content
+            $("html, body").animate({ scrollTop: 0 }, 500); // Optional: Scroll to top smoothly
+          }
+
+          function incrementNumber() {
+            let $loaderNumber = $(".loader_number");
+            let currentNumber = 0;
+
+            let interval = setInterval(function () {
+              if (currentNumber < 100) {
+                currentNumber++;
+                $loaderNumber.text(currentNumber);
+
+                // Trigger the animation
+                triggerAnimation($loaderNumber[0]);
+              } else {
+                clearInterval(interval);
+                init_loader();
+              }
+            }, 95); // Adjust the speed of the increment as needed
+          }
+
+          function triggerAnimation(element) {
+            const bg = element.dataset.bgColor;
+            const fg = element.dataset.fgColor;
+
+            const text = new SplitType(element, { types: "chars" });
+
+            gsap.fromTo(
+              text.chars,
+              {
+                color: bg,
+              },
+              {
+                color: fg,
+                duration: 0.1,
+                stagger: 0.02,
+              }
+            );
+          }
+
+          incrementNumber();
         });
       },
+
       BackgroundImage: function () {
         $("[data-background]").each(function () {
           $(this).css(

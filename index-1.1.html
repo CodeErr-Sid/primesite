@@ -24,805 +24,508 @@
 	<link rel="stylesheet" href="assets/css/global.css">
 	<link rel="stylesheet" href="assets/textillate/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
 </head>
 
 <body class="ori-digital-studio">
-	<div id="preloader"></div>
-	<div class="up">
-		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
-	</div>
+	<div class="page-wrapper">
+		<div class="page-load">
+		  <div class="container-lg">
+			<div class="page-load-container">
+			  <div class="page-load-top">
+				<img
+				  src="assets/img/logo/psi_logo.png"
+				  alt=""
+				  style="width: 150px; z-index: 10"
+				/>
+				<div class="show-mob">
+				  <div class="loader-text">
+					<p class="text-animation">
+					  A full-service agency designing digital products and
+					  experiences for companies and startups around the world
+					</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="page-load-btm">
+				<div class="loader-one-line">
+				  <div class="pg-loading-text-div">
+					<div class="hide-mobile-landscape">
+					  <div class="loader-text">
+						<p class="para">
+						  A full-service agency designing digital products and
+						  experiences for companies and startups around the world
+						</p>
+					  </div>
+					</div>
+					<div class="text-anime-opacity">loading...</div>
+				  </div>
+				  <div class="pg-loading-text-progress">
+					<div class="pg-loading-number">
+					  <div
+						class="super-text-xl loader_number reveal-type"
+						data-bg-color="gray"
+						data-fg-color="white"
+					  >
+						1
+					  </div>
+					  <div class="super-text-xl">%</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
 	
-	<div id="cursor"></div>
+	
 	<!-- Start of header section
 	============================================= -->
-	<header id="ori-header" class="ori-header-section sticky-on header-style-one bg-transparent">
-		<div class="ori-header-content-area m-0-auto">
-			<div class="ori-header-content d-flex align-items-center glassmorphism-effect justify-content-between">
-				<div class="brand-logo">
-					<a href="#"><img src="assets/img/logo/psi_logo.png" alt="" style="width: 150px;"></a>
-				</div>
-				<div class="ori-main-navigation-area">
-					<nav class="ori-main-navigation clearfix ul-li">
-						<ul id="main-nav" class="nav navbar-nav clearfix">
-							<li><a href="#ori-slider-1" class="hover-effect">about</a></li>
-							<li><a href="#ori-service-1" class="hover-effect">services</a></li>
-							<li><a href="#ori-project-1" class="hover-effect">works</a></li>
-							<li><a href="#ori-testimonial-1" class="hover-effect">contact</a></li>
-							<!-- <li><a  href="#ori-team-1">Team</a></li> -->
-							<!-- <li><a  href="#ori-blog-1">Blog</a></li> -->
-						</ul>
-					</nav>
-				</div>
-				<div class="ori-header-sidebar-search d-flex align-items-center">
-					<!-- <div class="ori-search-btn">
-						<button class="search-box-outer"><i class="fal fa-search"></i></button>
-					</div> -->
-					<div class="ori-sidenav-btn navSidebar-button">
-						<button><i class="fal fa-bars"></i></button>
+	<div id="main" class="main">
+		<header id="ori-header" class="ori-header-section sticky-on header-style-one bg-transparent">
+			<div class="ori-header-content-area m-0-auto">
+				<div class="ori-header-content d-flex align-items-center glassmorphism-effect justify-content-between">
+					<div class="brand-logo">
+						<a href="#"><img src="assets/img/logo/psi_logo.png" alt="" style="width: 150px;"></a>
 					</div>
-				</div>
-			</div>
-			<div class="mobile_menu position-relative">
-				<div class="mobile_menu_button open_mobile_menu">
-					<i class="fal fa-bars"></i>
-				</div>
-				<div class="mobile_menu_wrap">
-					<div class="mobile_menu_overlay open_mobile_menu"></div>
-					<div class="mobile_menu_content">
-						<div class="mobile_menu_close open_mobile_menu">
-							<i class="fal fa-times"></i>
-						</div>
-						<div class="m-brand-logo">
-							<a href="%21.html#"><img src="assets/img/logo/primesite_logo.png" alt=""></a>
-						</div>
-						<nav class="mobile-main-navigation  clearfix ul-li">
-							<ul id="m-main-nav" class="nav navbar-nav clearfix">
-								<li><a href="#ori-slider-1">Home</a></li>
-								<li><a href="#ori-service-1">Service</a></li>
-								<li><a href="#ori-project-1">Portfolio</a></li>
+					<div class="ori-main-navigation-area">
+						<nav class="ori-main-navigation clearfix ul-li">
+							<ul id="main-nav" class="nav navbar-nav clearfix">
+								<li><a href="#ori-slider-1" class="hover-effect">about</a></li>
+								<li><a href="#ori-service-1" class="hover-effect">services</a></li>
+								<li><a href="#ori-project-1" class="hover-effect">works</a></li>
+								<li><a href="#ori-testimonial-1" class="hover-effect">contact</a></li>
 								<!-- <li><a  href="#ori-team-1">Team</a></li> -->
-								<li><a href="#ori-testimonial-1">Testimonial</a></li>
 								<!-- <li><a  href="#ori-blog-1">Blog</a></li> -->
 							</ul>
 						</nav>
 					</div>
-				</div>
-				<!-- /Mobile-Menu -->
-			</div>
-		</div>
-	</header><!-- /header -->
-
-	<!-- Search PopUp -->
-	<div class="search-popup">
-		<button class="close-search style-two"><span class="fal fa-times"></span></button>
-		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
-		<form method="post" action="https://html.themexriver.com/Orixy/blog.html">
-			<div class="form-group">
-				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</div>
-		</form>
-	</div>
-	<!-- Sidebar sidebar Item -->
-	<div class="xs-sidebar-group info-group">
-		<div class="xs-overlay xs-bg-black">
-			<div class="row loader-area">
-				<div class="col-3 preloader-wrap">
-					<div class="loader-bg"></div>
-				</div>
-				<div class="col-3 preloader-wrap">
-					<div class="loader-bg"></div>
-				</div>
-				<div class="col-3 preloader-wrap">
-					<div class="loader-bg"></div>
-				</div>
-				<div class="col-3 preloader-wrap">
-					<div class="loader-bg"></div>
-				</div>
-			</div>
-		</div>
-		<div class="xs-sidebar-widget">
-			<div class="sidebar-widget-container">
-				<div class="widget-heading">
-					<a href="#" class="close-side-widget">
-						x
-					</a>
-				</div>
-				<div class="sidebar-textwidget">
-
-					<div class="sidebar-info-contents headline pera-content">
-						<div class="content-inner">
-							<div class="logo">
-								<a href="index-1.html"><img style="width: 200px;" src="assets/img/logo/psi_logo.png"
-										alt=""></a>
-							</div>
-							<div class="content-box">
-								<h5>About Us</h5>
-								<p class="text">The argument in favor of using filler text goes something like this: If
-									you use real content in the Consulting Process, anytime you reach a review point
-									you’ll end up reviewing and negotiating the content itself and not the design.</p>
-							</div>
-							<div class="gallery-box ul-li">
-								<h5>Gallery</h5>
-								<ul class="zoom-gallery">
-									<li><a href="assets/img/gallery/gl1.png"
-											data-source="assets/img/gallery/gl1.png"><img
-												src="assets/img/gallery/gl1.png" alt=""></a></li>
-									<li><a href="assets/img/gallery/gl2.png"
-											data-source="assets/img/gallery/gl2.png"><img
-												src="assets/img/gallery/gl2.png" alt=""></a></li>
-									<li><a href="assets/img/gallery/gl3.png"
-											data-source="assets/img/gallery/gl3.png"><img
-												src="assets/img/gallery/gl3.png" alt=""></a></li>
-									<li><a href="assets/img/gallery/gl4.png"
-											data-source="assets/img/gallery/gl4.png"><img
-												src="assets/img/gallery/gl4.png" alt=""></a></li>
-									<li><a href="assets/img/gallery/gl5.png"
-											data-source="assets/img/gallery/gl4.png"><img
-												src="assets/img/gallery/gl5.png" alt=""></a></li>
-									<li><a href="assets/img/gallery/gl6.png"
-											data-source="assets/img/gallery/gl4.png"><img
-												src="assets/img/gallery/gl6.png" alt=""></a></li>
-								</ul>
-							</div>
-							<div class="content-box">
-								<h5>Social Account</h5>
-								<ul class="social-box">
-									<li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
-									<li><a href="https://www.twitter.com/" class="fab fa-twitter"></a></li>
-									<li><a href="https://dribbble.com/" class="fab fa-dribbble"></a></li>
-									<li><a href="https://www.linkedin.com/" class="fab fa-linkedin"></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End of header section
-	============================================= -->
-
-	<!-- Start of Slider section
-	============================================= -->
-	<section id="ori-slider-1" class="ori-slider-section-1 position-relative bg-black">
-		<div class="ori-slider-content-wrapper-1 postion-relative">
-			<!-- <div class="ori-slider-social position-absolute text-uppercase ul-li">
-				<ul>
-					<li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-					<li><a href="#"><i class="fab fa-linkedin"></i>LinkedIn<//a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i>twitter</a></li>
-				</ul>
-			</div> -->
-			<div class="ori-slider-wrap-1">
-				<div class="ori-slider-content-1 position-relative d-flex align-items-center">
-					<div class="ori-slider-text text-left  text-uppercase">
-						<h1>Build Digital <span>PRoduct</span>
-							and Brand <i class="fas fa-arrow-right"></i>
-						</h1>
-						<!-- <div class="slider-play-btn">
-							<a class="video_box d-flex align-items-center justify-content-center text-uppercase" href="https://www.youtube.com/watch?v=O0pLvLtoESc">PLAY</a>
+					<div class="ori-header-sidebar-search d-flex align-items-center">
+						<!-- <div class="ori-search-btn">
+							<button class="search-box-outer"><i class="fal fa-search"></i></button>
 						</div> -->
-						<!-- <div class="ori-slider-img position-absolute">
-							<img src="assets/img/slider/slider-1.png" alt="">
-						</div> -->
-					</div>
-					<div class="ori-slider-hero-img">
-						<img src="./assets/img/landing/banner/hero-image-1.png" alt="">
-					</div>
-				</div>
-				<div class="ori-slider-content-1 position-relative">
-					<div class="ori-slider-text text-center  text-uppercase">
-						<h1>Build Digital <span>PRoduct</span>
-							and Brand <i class="fas fa-arrow-right"></i>
-						</h1>
-						<div class="slider-play-btn">
-							<a class="video_box d-flex align-items-center justify-content-center text-uppercase"
-								href="https://www.youtube.com/watch?v=O0pLvLtoESc">PLAY</a>
-						</div>
-						<div class="ori-slider-img position-absolute">
-							<img src="assets/img/slider/slider-1.png" alt="">
+						<div class="ori-sidenav-btn navSidebar-button">
+							<button><i class="fal fa-bars"></i></button>
 						</div>
 					</div>
 				</div>
-				<div class="ori-slider-content-1 position-relative">
-					<div class="ori-slider-text text-center  text-uppercase">
-						<h1>Build Digital <span>PRoduct</span>
-							and Brand <i class="fas fa-arrow-right"></i>
-						</h1>
-						<div class="slider-play-btn">
-							<a class="video_box d-flex align-items-center justify-content-center text-uppercase"
-								href="https://www.youtube.com/watch?v=O0pLvLtoESc">PLAY</a>
-						</div>
-						<div class="ori-slider-img position-absolute">
-							<img src="assets/img/slider/slider-1.png" alt="">
+				<div class="mobile_menu position-relative">
+					<div class="mobile_menu_button open_mobile_menu">
+						<i class="fal fa-bars"></i>
+					</div>
+					<div class="mobile_menu_wrap">
+						<div class="mobile_menu_overlay open_mobile_menu"></div>
+						<div class="mobile_menu_content">
+							<div class="mobile_menu_close open_mobile_menu">
+								<i class="fal fa-times"></i>
+							</div>
+							<div class="m-brand-logo">
+								<a href="%21.html#"><img src="assets/img/logo/primesite_logo.png" alt=""></a>
+							</div>
+							<nav class="mobile-main-navigation  clearfix ul-li">
+								<ul id="m-main-nav" class="nav navbar-nav clearfix">
+									<li><a href="#ori-slider-1">Home</a></li>
+									<li><a href="#ori-service-1">Service</a></li>
+									<li><a href="#ori-project-1">Portfolio</a></li>
+									<!-- <li><a  href="#ori-team-1">Team</a></li> -->
+									<li><a href="#ori-testimonial-1">Testimonial</a></li>
+									<!-- <li><a  href="#ori-blog-1">Blog</a></li> -->
+								</ul>
+							</nav>
 						</div>
 					</div>
+					<!-- /Mobile-Menu -->
 				</div>
 			</div>
-			<!-- <div class="line_animation">
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-				<div class="line_area"></div>
-			</div> -->
+		</header><!-- /header -->
+	
+		<!-- Search PopUp -->
+		<div class="search-popup">
+			<button class="close-search style-two"><span class="fal fa-times"></span></button>
+			<button class="close-search"><span class="fa fa-arrow-up"></span></button>
+			<form method="post" action="https://html.themexriver.com/Orixy/blog.html">
+				<div class="form-group">
+					<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</div>
+			</form>
 		</div>
-		<!-- <div class="ori-slider-scroll position-absolute text-uppercase">
-			<span>Scroll </span>
-			<div class="scroll-mouse">
-				<i class="fal fa-mouse"></i>
-			</div>
-		</div> -->
-	</section>
-	<!-- End of Slider section
-	============================================= -->
-
-	<!-- Start of Text scroll section
-	============================================= -->
-	<section class="outer-section-slider">
-
-		<section id="ori-text-scroll-1" class="ori-text-scroll-section-1 position-relative">
-			<div class="ori-text-scroll-content">
-				<div class="ori-text-scroll-item-1 text-uppercase">
-					<h3>We are PrimeSite <span>Innovations</span></h3>
-					<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
-					<h3>We are PrimeSite <span>Innovations</span></h3>
-					<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+		<!-- Sidebar sidebar Item -->
+		<div class="xs-sidebar-group info-group">
+			<div class="xs-overlay xs-bg-black">
+				<div class="row loader-area">
+					<div class="col-3 preloader-wrap">
+						<div class="loader-bg"></div>
+					</div>
+					<div class="col-3 preloader-wrap">
+						<div class="loader-bg"></div>
+					</div>
+					<div class="col-3 preloader-wrap">
+						<div class="loader-bg"></div>
+					</div>
+					<div class="col-3 preloader-wrap">
+						<div class="loader-bg"></div>
+					</div>
 				</div>
 			</div>
-			<!-- <div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div> -->
+			<div class="xs-sidebar-widget">
+				<div class="sidebar-widget-container">
+					<div class="widget-heading">
+						<a href="#" class="close-side-widget">
+							x
+						</a>
+					</div>
+					<div class="sidebar-textwidget">
+	
+						<div class="sidebar-info-contents headline pera-content">
+							<div class="content-inner">
+								<div class="logo">
+									<a href="index-1.html"><img style="width: 200px;" src="assets/img/logo/psi_logo.png"
+											alt=""></a>
+								</div>
+								<div class="content-box">
+									<h5>About Us</h5>
+									<p class="text">The argument in favor of using filler text goes something like this: If
+										you use real content in the Consulting Process, anytime you reach a review point
+										you’ll end up reviewing and negotiating the content itself and not the design.</p>
+								</div>
+								<div class="gallery-box ul-li">
+									<h5>Gallery</h5>
+									<ul class="zoom-gallery">
+										<li><a href="assets/img/gallery/gl1.png"
+												data-source="assets/img/gallery/gl1.png"><img
+													src="assets/img/gallery/gl1.png" alt=""></a></li>
+										<li><a href="assets/img/gallery/gl2.png"
+												data-source="assets/img/gallery/gl2.png"><img
+													src="assets/img/gallery/gl2.png" alt=""></a></li>
+										<li><a href="assets/img/gallery/gl3.png"
+												data-source="assets/img/gallery/gl3.png"><img
+													src="assets/img/gallery/gl3.png" alt=""></a></li>
+										<li><a href="assets/img/gallery/gl4.png"
+												data-source="assets/img/gallery/gl4.png"><img
+													src="assets/img/gallery/gl4.png" alt=""></a></li>
+										<li><a href="assets/img/gallery/gl5.png"
+												data-source="assets/img/gallery/gl4.png"><img
+													src="assets/img/gallery/gl5.png" alt=""></a></li>
+										<li><a href="assets/img/gallery/gl6.png"
+												data-source="assets/img/gallery/gl4.png"><img
+													src="assets/img/gallery/gl6.png" alt=""></a></li>
+									</ul>
+								</div>
+								<div class="content-box">
+									<h5>Social Account</h5>
+									<ul class="social-box">
+										<li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
+										<li><a href="https://www.twitter.com/" class="fab fa-twitter"></a></li>
+										<li><a href="https://dribbble.com/" class="fab fa-dribbble"></a></li>
+										<li><a href="https://www.linkedin.com/" class="fab fa-linkedin"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of header section
+		============================================= -->
+	
+		<!-- Start of Slider section
+		============================================= -->
+		<section id="ori-slider-1" class="ori-slider-section-1 position-relative bg-black">
+			<div class="ori-slider-content-wrapper-1 postion-relative">
+				<!-- <div class="ori-slider-social position-absolute text-uppercase ul-li">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i>LinkedIn<//a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i>twitter</a></li>
+					</ul>
+				</div> -->
+				<div class="ori-slider-wrap-1">
+					<div class="ori-slider-content-1 position-relative d-flex align-items-center">
+						<div class="ori-slider-text text-left  text-uppercase">
+							<h1>Build Digital <span>PRoduct</span>
+								and Brand <i class="fas fa-arrow-right"></i>
+							</h1>
+							<!-- <div class="slider-play-btn">
+								<a class="video_box d-flex align-items-center justify-content-center text-uppercase" href="https://www.youtube.com/watch?v=O0pLvLtoESc">PLAY</a>
+							</div> -->
+							<!-- <div class="ori-slider-img position-absolute">
+								<img src="assets/img/slider/slider-1.png" alt="">
+							</div> -->
+						</div>
+						<div class="ori-slider-hero-img">
+							<img src="./assets/img/landing/banner/hero-image-1.png" alt="">
+						</div>
+					</div>
+					<div class="ori-slider-content-1 position-relative">
+						<div class="ori-slider-text text-center  text-uppercase">
+							<h1>Build Digital <span>PRoduct</span>
+								and Brand <i class="fas fa-arrow-right"></i>
+							</h1>
+							<div class="slider-play-btn">
+								<a class="video_box d-flex align-items-center justify-content-center text-uppercase"
+									href="https://www.youtube.com/watch?v=O0pLvLtoESc">PLAY</a>
+							</div>
+							<div class="ori-slider-img position-absolute">
+								<img src="assets/img/slider/slider-1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="ori-slider-content-1 position-relative">
+						<div class="ori-slider-text text-center  text-uppercase">
+							<h1>Build Digital <span>PRoduct</span>
+								and Brand <i class="fas fa-arrow-right"></i>
+							</h1>
+							<div class="slider-play-btn">
+								<a class="video_box d-flex align-items-center justify-content-center text-uppercase"
+									href="https://www.youtube.com/watch?v=O0pLvLtoESc">PLAY</a>
+							</div>
+							<div class="ori-slider-img position-absolute">
+								<img src="assets/img/slider/slider-1.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="line_animation">
+					<div class="line_area"></div>
+					<div class="line_area"></div>
+					<div class="line_area"></div>
+					<div class="line_area"></div>
+					<div class="line_area"></div>
+					<div class="line_area"></div>
+					<div class="line_area"></div>
+					<div class="line_area"></div>
+				</div> -->
+			</div>
+			<!-- <div class="ori-slider-scroll position-absolute text-uppercase">
+				<span>Scroll </span>
+				<div class="scroll-mouse">
+					<i class="fal fa-mouse"></i>
+				</div>
+			</div> -->
 		</section>
-
-	</section>
-	<!-- End of Text scroll section
-	============================================= -->
-
-	<!-- start of Founder's note section
-	============================================= -->
-
-	<section class="outer-section-founders-note">
-
-		<section id="founders-note">
-			<div class="f-container">
-				<div class="about-heading-box">
-					<p>about</p>
+		<!-- End of Slider section
+		============================================= -->
+	
+		<!-- Start of Text scroll section
+		============================================= -->
+		<section class="outer-section-slider">
+	
+			<section id="ori-text-scroll-1" class="ori-text-scroll-section-1 position-relative">
+				<div class="ori-text-scroll-content">
+					<div class="ori-text-scroll-item-1 text-uppercase">
+						<h3>We are PrimeSite <span>Innovations</span></h3>
+						<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+						<h3>We are PrimeSite <span>Innovations</span></h3>
+						<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+					</div>
 				</div>
-				<div class="f-content-box">
-					<p class="reveal-type f-content"  data-bg-color="gray" data-fg-color="#fff">
-						“We are a small team of experts from Ukraine, specializing in developing modern products that
-						push
-						the
-						boundaries of design. We help small businesses, startups, and other brands to grow and win by
-						turning
-						ideas into functional solutions.
+				<!-- <div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+			</div> -->
+			</section>
+	
+		</section>
+		<!-- End of Text scroll section
+		============================================= -->
+	
+		<!-- start of Founder's note section
+		============================================= -->
+	
+		<section class="outer-section-founders-note">
+	
+			<section id="founders-note">
+				<div class="f-container">
+					<div class="about-heading-box">
+						<p>about</p>
+					</div>
+					<div class="f-content-box">
+						<p class="reveal-type f-content"  data-bg-color="gray" data-fg-color="#fff">
+							“We are a small team of experts from Ukraine, specializing in developing modern products that
+							push
+							the
+							boundaries of design. We help small businesses, startups, and other brands to grow and win by
+							turning
+							ideas into functional solutions.
+							<br>
+							<br>
+							We closely collaborate with our clients to understand the needs and goals of the product, as
+							communication is the key to the success of any project.“
+						</p>
 						<br>
 						<br>
-						We closely collaborate with our clients to understand the needs and goals of the product, as
-						communication is the key to the success of any project.“
+						<div class="founder-name-img">
+							<div class="founder-img">
+								<img src="assets/img/about/founder.jfif" alt="">
+							</div>
+							<div class="founder-description">
+								<h4>Syed Ayman</h4>
+								<p>Founder & CEO at PrimeSite Innovations</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	
+	
+	
+		<!-- End of Founder's note section
+		============================================= -->
+	
+	
+		<!-- Start of clip path animated service section
+		============================================= -->
+	
+		<section class="ori-services-outer-section">
+			<section class="ori-services-inner-section">
+				<div class="ori-service-primary-header">
+					<h1>services</h1>
+					<h1>see projects &rarr;</h1>
+				</div>
+				<div class="ori-service-content">
+					<h1 class="ori-service-element">
+						<span class="ori-service-number">02</span>
+						<span class="ori-service-heading">UI/UX DESIGN
+							<div class="ori-service-heading-image" id="ori-ui-ux-design"
+								style="  background: url('assets/img/custom/ux-design2.webp') no-repeat center center/contain;">
+							</div>
+						</span>
+					</h1>
+					<h1 class="ori-service-element" style="gap: 13%;">
+						<span class="ori-service-heading">BRANDING
+							<div class="ori-service-heading-image" id="ori-branding"
+								style="  background: url('assets/img/custom/branding2.webp') no-repeat center center/contain;">
+							</div>
+						</span>
+						<span class="ori-service-number">01</span>
+					</h1>
+					<h1 class="ori-service-element">
+						<span class="ori-service-number">03</span>
+						<span class="ori-service-heading">DEVELOPMENT
+							<div class="ori-service-heading-image" id="ori-development"
+								style="  background: url('assets/img/custom/development2.webp') no-repeat center center/contain;">
+							</div>
+						</span>
+					</h1>
+				</div>
+				<div class="ori-services-footer">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo minima accusantium obcaecati
+						animi placeat necessitatibus ex libero, commodi aperiam.</p>
+					<button class="getproposal">get your proposal</button>
+				</div>
+			</section>
+		</section>
+	
+	
+		<!-- End of clip path animated service section
+		============================================= -->
+	
+	
+	
+	
+		<!-- Start of object roation video section
+		============================================= -->
+		<section class="outer-section-orv">
+			<section class="inner-section-orv">
+				<div id="orv-upper-text">
+					<p class="reveal-type" data-bg-color="gray" data-fg-color="#fff">
+						HAVE A PROJECT IDEA? LET'S TURN IT INTO LIFE
 					</p>
-					<br>
-					<br>
-					<div class="founder-name-img">
-						<div class="founder-img">
-							<img src="assets/img/about/founder.jfif" alt="">
-						</div>
-						<div class="founder-description">
-							<h4>Syed Ayman</h4>
-							<p>Founder & CEO at PrimeSite Innovations</p>
-						</div>
+				</div>
+				<div class="orv-bottom-text">
+					<div class="orv-bottom-left">
+						<p>say hi</p>
+						<a href="mailto:primesiteinnovations@gmail.com"
+							class="orv-email hover-effect">primesiteinnovations@gmail.com</a>
+	
+					</div>
+					<div class="orv-bottom-right">
+						<p class="ori-tlt orv-lc hover-effect">Let's collabrate</p>
 					</div>
 				</div>
-			</div>
+				<video autoplay loop muted playsinline>
+					<source src="assets/video/kreyda_logo_anim (3)-hevc-safari-depositphotos-bgremover.webm"
+						type="video/webm">
+					Your browser does not support the video tag.
+				</video>
+				<!-- <img src="assets/video/kreyda-logo-anim-3-hevc-safari-unscreen.gif" alt="" srcset=""> -->
+			</section>
 		</section>
-	</section>
-
-
-
-	<!-- End of Founder's note section
-	============================================= -->
-
-
-	<!-- Start of clip path animated service section
-	============================================= -->
-
-	<section class="ori-services-outer-section">
-		<section class="ori-services-inner-section">
-			<div class="ori-service-primary-header">
-				<h1>services</h1>
-				<h1>see projects &rarr;</h1>
-			</div>
-			<div class="ori-service-content">
-				<h1 class="ori-service-element">
-					<span class="ori-service-number">02</span>
-					<span class="ori-service-heading">UI/UX DESIGN
-						<div class="ori-service-heading-image" id="ori-ui-ux-design"
-							style="  background: url('assets/img/custom/ux-design2.webp') no-repeat center center/contain;">
-						</div>
-					</span>
-				</h1>
-				<h1 class="ori-service-element" style="gap: 13%;">
-					<span class="ori-service-heading">BRANDING
-						<div class="ori-service-heading-image" id="ori-branding"
-							style="  background: url('assets/img/custom/branding2.webp') no-repeat center center/contain;">
-						</div>
-					</span>
-					<span class="ori-service-number">01</span>
-				</h1>
-				<h1 class="ori-service-element">
-					<span class="ori-service-number">03</span>
-					<span class="ori-service-heading">DEVELOPMENT
-						<div class="ori-service-heading-image" id="ori-development"
-							style="  background: url('assets/img/custom/development2.webp') no-repeat center center/contain;">
-						</div>
-					</span>
-				</h1>
-			</div>
-			<div class="ori-services-footer">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo minima accusantium obcaecati
-					animi placeat necessitatibus ex libero, commodi aperiam.</p>
-				<button class="getproposal">get your proposal</button>
-			</div>
-		</section>
-	</section>
-
-
-	<!-- End of clip path animated service section
-	============================================= -->
-
-
-
-
-	<!-- Start of object roation video section
-	============================================= -->
-	<section class="outer-section-orv">
-		<section class="inner-section-orv">
-			<div id="orv-upper-text">
-				<p class="reveal-type" data-bg-color="gray" data-fg-color="#fff">
-					HAVE A PROJECT IDEA? LET'S TURN IT INTO LIFE
-				</p>
-			</div>
-			<div class="orv-bottom-text">
-				<div class="orv-bottom-left">
-					<p>say hi</p>
-					<a href="mailto:primesiteinnovations@gmail.com"
-						class="orv-email hover-effect">primesiteinnovations@gmail.com</a>
-
-				</div>
-				<div class="orv-bottom-right">
-					<p class="ori-tlt orv-lc hover-effect">Let's collabrate</p>
-				</div>
-			</div>
-			<video autoplay loop muted playsinline>
-				<source src="assets/video/kreyda_logo_anim (3)-hevc-safari-depositphotos-bgremover.webm"
-					type="video/webm">
-				Your browser does not support the video tag.
-			</video>
-			<!-- <img src="assets/video/kreyda-logo-anim-3-hevc-safari-unscreen.gif" alt="" srcset=""> -->
-		</section>
-	</section>
-	<!-- End of object rotation video  section
-	============================================= -->
-
-
-
-	<!-- Start of Service section
-	============================================= -->
-	<section id="ori-service-1" class="ori-service-section-1">
-		<div class="ori-service-wrapper-1">
-			<div class="container">
-				<div class="ori-service-top-content-1 d-flex justify-content-between align-items-center">
-					<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms"
-						data-wow-duration="1500ms">
-						<h2>Modern digital <span> design experience</span></h2>
-					</div>
-					<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms"
-						data-wow-duration="1500ms">
-						<a href="service.html">Our services</a>
-					</div>
-				</div>
-				<div class="ori-service-content-1">
-					<div class="row">
-						<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-							<div class="ori-service-inner-item position-relative">
-								<div class="ori-service-more position-absolute">
-									<a href="about.html"><i class="fas fa-arrow-right"></i></a>
-								</div>
-								<div class="ori-service-img-title position-relative">
-									<div class="ori-service-img">
-										<img src="assets/img/service/ser1.png" alt="">
-									</div>
-									<div class="ori-service-title text-center position-absolute">
-										<h3>About us <i class="fal fa-arrow-right"></i></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-							<div class="ori-service-inner-item position-relative">
-								<div class="ori-service-more position-absolute">
-									<a href="mission.html"><i class="fas fa-arrow-right"></i></a>
-								</div>
-								<div class="ori-service-img-title position-relative">
-									<div class="ori-service-img">
-										<img src="assets/img/service/ser2.png" alt="">
-									</div>
-									<div class="ori-service-title text-center position-absolute">
-										<h3>Our Mission <i class="fal fa-arrow-right"></i></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-							<div class="ori-service-inner-item position-relative">
-								<div class="ori-service-more position-absolute">
-									<a href="service.html"><i class="fas fa-arrow-right"></i></a>
-								</div>
-								<div class="ori-service-img-title position-relative">
-									<div class="ori-service-img">
-										<img src="assets/img/service/ser3.png" alt="">
-									</div>
-									<div class="ori-service-title text-center position-absolute">
-										<h3>Our approach <i class="fal fa-arrow-right"></i></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End of Service section
-	============================================= -->
-
-	<!-- Start of Sponsor section
-	============================================= -->
-	<section id="ori-sponsor-1" class="ori-sponsor-section-1 position-relative">
-		<div class="container">
-			<div class="ori-sponsor-title text-uppercase text-center">
-				<h3><i></i> <span>Trusted by</span> <i></i> </h3>
-			</div>
-			<div class="ori-sponsor-content">
-				<div class="ori-sponsor-slider">
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="assets/img/sponsor/sp1.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="assets/img/sponsor/sp2.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="assets/img/sponsor/sp3.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="assets/img/sponsor/sp4.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="assets/img/sponsor/sp5.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="assets/img/sponsor/sp1.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="assets/img/sponsor/sp2.png" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="ori-sponsor-item">
-						<div class="ori-sponsor-img">
-							<a href="#">
-								<img src="assets/img/sponsor/sp3.png" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>
-	<!-- End of Sponsor section
-	============================================= -->
-
-	<!-- Start of Project section
-	============================================= -->
-	<section id="ori-project-1" class="ori-project-section-1 position-relative">
-		<div class="container">
-			<div class="ori-project-content-1 position-relative">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="ori-project-tab-btn-content">
-							<div class="ori-section-title-1 text-uppercase wow fadeInUp" data-wow-delay="200ms"
-								data-wow-duration="1500ms">
-								<h2>completed <span> project's</span></h2>
-							</div>
-							<div class="ori-project-tab-btn ul-li-block text-uppercase wow fadeInUp"
-								data-wow-delay="400ms" data-wow-duration="1500ms">
-								<ul class="nav nav-pills" id="pills-tab" role="tablist">
-									<li class="nav-item" role="presentation">
-										<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-											data-bs-target="#pills-home" type="button" role="tab"
-											aria-controls="pills-home" aria-selected="true">Sri Varsha Foods</button>
-									</li>
-									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-											data-bs-target="#pills-profile" type="button" role="tab"
-											aria-controls="pills-profile" aria-selected="false">FoodOnFocus
-											Media</button>
-									</li>
-									<!-- <li class="nav-item" role="presentation">
-										<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Branding Design</button>
-									</li>
-									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="interior-tab" data-bs-toggle="pill" data-bs-target="#interior" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Web Project</button>
-									</li>
-									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="construction-tab" data-bs-toggle="pill" data-bs-target="#construction" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Graphic Design</button>
-									</li> -->
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-8">
-						<div class="ori-project-tab-content wow fadeInUp" data-wow-delay="500ms"
+		<!-- End of object rotation video  section
+		============================================= -->
+	
+	
+	
+		<!-- Start of Service section
+		============================================= -->
+		<section id="ori-service-1" class="ori-service-section-1">
+			<div class="ori-service-wrapper-1">
+				<div class="container">
+					<div class="ori-service-top-content-1 d-flex justify-content-between align-items-center">
+						<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms"
 							data-wow-duration="1500ms">
-							<div class="tab-content" id="pills-tabContent">
-								<div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-									aria-labelledby="pills-home-tab">
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro1.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
+							<h2>Modern digital <span> design experience</span></h2>
+						</div>
+						<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms"
+							data-wow-duration="1500ms">
+							<a href="service.html">Our services</a>
+						</div>
+					</div>
+					<div class="ori-service-content-1">
+						<div class="row">
+							<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+								<div class="ori-service-inner-item position-relative">
+									<div class="ori-service-more position-absolute">
+										<a href="about.html"><i class="fas fa-arrow-right"></i></a>
 									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro2.png" alt="">
+									<div class="ori-service-img-title position-relative">
+										<div class="ori-service-img">
+											<img src="assets/img/service/ser1.png" alt="">
 										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div>
-									<!-- <div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro3.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div> -->
-								</div>
-								<div class="tab-pane fade" id="pills-profile" role="tabpanel"
-									aria-labelledby="pills-home-tab">
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro1.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro2.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro3.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+										<div class="ori-service-title text-center position-absolute">
+											<h3>About us <i class="fal fa-arrow-right"></i></h3>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="pills-contact" role="tabpanel"
-									aria-labelledby="pills-home-tab">
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro1.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
+							</div>
+							<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+								<div class="ori-service-inner-item position-relative">
+									<div class="ori-service-more position-absolute">
+										<a href="mission.html"><i class="fas fa-arrow-right"></i></a>
 									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro2.png" alt="">
+									<div class="ori-service-img-title position-relative">
+										<div class="ori-service-img">
+											<img src="assets/img/service/ser2.png" alt="">
 										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro3.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+										<div class="ori-service-title text-center position-absolute">
+											<h3>Our Mission <i class="fal fa-arrow-right"></i></h3>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="interior" role="tabpanel"
-									aria-labelledby="pills-home-tab">
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro1.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
+							</div>
+							<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
+								<div class="ori-service-inner-item position-relative">
+									<div class="ori-service-more position-absolute">
+										<a href="service.html"><i class="fas fa-arrow-right"></i></a>
 									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro2.png" alt="">
+									<div class="ori-service-img-title position-relative">
+										<div class="ori-service-img">
+											<img src="assets/img/service/ser3.png" alt="">
 										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro3.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="construction" role="tabpanel"
-									aria-labelledby="pills-home-tab">
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro1.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro2.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
-										</div>
-									</div>
-									<div class="ori-project-item-1 position-relative">
-										<div class="ori-project-img">
-											<img src="assets/img/project/pro3.png" alt="">
-										</div>
-										<div class="ori-project-text position-absolute">
-											<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
-											<span class="text-uppercase project-category"><a href="#">Baskcate Ball
-													Art</a></span>
-										</div>
-										<div class="ori-project-link position-absolute">
-											<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+										<div class="ori-service-title text-center position-absolute">
+											<h3>Our approach <i class="fal fa-arrow-right"></i></h3>
 										</div>
 									</div>
 								</div>
@@ -830,486 +533,831 @@
 						</div>
 					</div>
 				</div>
-				<div class="ori-btn-1 position-absolute text-uppercase wow fadeInUp" data-wow-delay="400ms"
-					data-wow-duration="1500ms">
-					<a href="portfolio.html">Visit our all work</a>
+			</div>
+		</section>
+		<!-- End of Service section
+		============================================= -->
+	
+		<!-- Start of Sponsor section
+		============================================= -->
+		<section id="ori-sponsor-1" class="ori-sponsor-section-1 position-relative">
+			<div class="container">
+				<div class="ori-sponsor-title text-uppercase text-center">
+					<h3><i></i> <span>Trusted by</span> <i></i> </h3>
+				</div>
+				<div class="ori-sponsor-content">
+					<div class="ori-sponsor-slider">
+						<div class="ori-sponsor-item">
+							<div class="ori-sponsor-img">
+								<a href="#">
+									<img src="assets/img/sponsor/sp1.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="ori-sponsor-item">
+							<div class="ori-sponsor-img">
+								<a href="#">
+									<img src="assets/img/sponsor/sp2.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="ori-sponsor-item">
+							<div class="ori-sponsor-img">
+								<a href="#">
+									<img src="assets/img/sponsor/sp3.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="ori-sponsor-item">
+							<div class="ori-sponsor-img">
+								<a href="#">
+									<img src="assets/img/sponsor/sp4.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="ori-sponsor-item">
+							<div class="ori-sponsor-img">
+								<a href="#">
+									<img src="assets/img/sponsor/sp5.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="ori-sponsor-item">
+							<div class="ori-sponsor-img">
+								<a href="#">
+									<img src="assets/img/sponsor/sp1.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="ori-sponsor-item">
+							<div class="ori-sponsor-img">
+								<a href="#">
+									<img src="assets/img/sponsor/sp2.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="ori-sponsor-item">
+							<div class="ori-sponsor-img">
+								<a href="#">
+									<img src="assets/img/sponsor/sp3.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>
-	<!-- End of Project section
-	============================================= -->
-
-
-
-	<!-- Start of Team section
-	============================================= -->
-	<!-- <section id="ori-team-1" class="ori-team-section-1 position-relative">
-		<div class="ori-team-content-area">
+			<div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+			</div>
+		</section>
+		<!-- End of Sponsor section
+		============================================= -->
+	
+		<!-- Start of Project section
+		============================================= -->
+		<section id="ori-project-1" class="ori-project-section-1 position-relative">
 			<div class="container">
-				<div class="ori-team-top-content-1 d-flex justify-content-between align-items-center">
+				<div class="ori-project-content-1 position-relative">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="ori-project-tab-btn-content">
+								<div class="ori-section-title-1 text-uppercase wow fadeInUp" data-wow-delay="200ms"
+									data-wow-duration="1500ms">
+									<h2>completed <span> project's</span></h2>
+								</div>
+								<div class="ori-project-tab-btn ul-li-block text-uppercase wow fadeInUp"
+									data-wow-delay="400ms" data-wow-duration="1500ms">
+									<ul class="nav nav-pills" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+												data-bs-target="#pills-home" type="button" role="tab"
+												aria-controls="pills-home" aria-selected="true">Sri Varsha Foods</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+												data-bs-target="#pills-profile" type="button" role="tab"
+												aria-controls="pills-profile" aria-selected="false">FoodOnFocus
+												Media</button>
+										</li>
+										<!-- <li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Branding Design</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="interior-tab" data-bs-toggle="pill" data-bs-target="#interior" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Web Project</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="construction-tab" data-bs-toggle="pill" data-bs-target="#construction" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Graphic Design</button>
+										</li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="ori-project-tab-content wow fadeInUp" data-wow-delay="500ms"
+								data-wow-duration="1500ms">
+								<div class="tab-content" id="pills-tabContent">
+									<div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+										aria-labelledby="pills-home-tab">
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro1.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro2.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<!-- <div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro3.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div> -->
+									</div>
+									<div class="tab-pane fade" id="pills-profile" role="tabpanel"
+										aria-labelledby="pills-home-tab">
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro1.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro2.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro3.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-contact" role="tabpanel"
+										aria-labelledby="pills-home-tab">
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro1.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro2.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro3.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="interior" role="tabpanel"
+										aria-labelledby="pills-home-tab">
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro1.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro2.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro3.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="construction" role="tabpanel"
+										aria-labelledby="pills-home-tab">
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro1.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro2.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+										<div class="ori-project-item-1 position-relative">
+											<div class="ori-project-img">
+												<img src="assets/img/project/pro3.png" alt="">
+											</div>
+											<div class="ori-project-text position-absolute">
+												<h3><a href="portfolio-single.html">Portrait Man Digital Art</a></h3>
+												<span class="text-uppercase project-category"><a href="#">Baskcate Ball
+														Art</a></span>
+											</div>
+											<div class="ori-project-link position-absolute">
+												<a href="portfolio-single.html"><i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ori-btn-1 position-absolute text-uppercase wow fadeInUp" data-wow-delay="400ms"
+						data-wow-duration="1500ms">
+						<a href="portfolio.html">Visit our all work</a>
+					</div>
+				</div>
+			</div>
+			<div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+			</div>
+		</section>
+		<!-- End of Project section
+		============================================= -->
+	
+	
+	
+		<!-- Start of Team section
+		============================================= -->
+		<!-- <section id="ori-team-1" class="ori-team-section-1 position-relative">
+			<div class="ori-team-content-area">
+				<div class="container">
+					<div class="ori-team-top-content-1 d-flex justify-content-between align-items-center">
+						<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+							<h2>Meet our team of <span>professional</span></h2>
+						</div>
+						<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+							<a href="team.html">all Team Member</a>
+						</div>
+					</div>
+					<div class="ori-team-content-1">
+						<div class="row">
+							<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+								<div class="ori-team-inner-item position-relative">
+									<div class="ori-team-img">
+										<img src="assets/img/team/tm1.png" alt="">
+									</div>
+									<div class="ori-team-text text-center position-absolute">
+										<h3><a href="team-single.html">Alextina Ditarson</a></h3>
+										<span>GRAPHIC DESIGNER</span>
+									</div>
+									<div class="ori-team-social text-center position-absolute">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+								<div class="ori-team-inner-item position-relative">
+									<div class="ori-team-img">
+										<img src="assets/img/team/tm2.png" alt="">
+									</div>
+									<div class="ori-team-text text-center position-absolute">
+										<h3><a href="team-single.html">Alextina Ditarson</a></h3>
+										<span>GRAPHIC DESIGNER</span>
+									</div>
+									<div class="ori-team-social text-center position-absolute">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
+								<div class="ori-team-inner-item position-relative">
+									<div class="ori-team-img">
+										<img src="assets/img/team/tm3.png" alt="">
+									</div>
+									<div class="ori-team-text text-center position-absolute">
+										<h3><a href="team-single.html">Alextina Ditarson</a></h3>
+										<span>GRAPHIC DESIGNER</span>
+									</div>
+									<div class="ori-team-social text-center position-absolute">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+			</div>
+		</section> -->
+		<!-- End of Team section
+		============================================= -->
+	
+		<!-- Start of Pricing section
+		============================================= -->
+		<section class="pricing-container">
+			<div class="pricing-flex container">
+				<div class="pricing-left col-lg-5">
+					<div class="pricing-left-top">
+						<div class="available-pill">
+							<div class="slots-available">
+								<p class="small-print">Slots available</p>
+							</div>
+						</div>
+					</div>
+					<h1 class="price-left-heading">
+						Join
+						<br />
+						Designjoy
+					</h1>
+					<div class="price-left-botom">
+						<a href="https://calendly.com/designjoy/designjoy-intro-1?month=2024-02" target="_blank"
+							class="pricing__left-inside-card top">
+							<div class="pricing__left-inside-card-left">
+								<h5 class="pricing__left-card-small-heading">
+									Book a 15-min intro call
+								</h5>
+								<p class="p-small smaller smallest m-b-0">
+									Learn more about how DesignJoy works and how it can help you.
+								</p>
+							</div>
+							<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de12548dcbda2881cd8ff5_Group%201.svg"
+								loading="lazy" alt="" />
+						</a>
+						<a href="https://designjoy.getrewardful.com/signup" target="_blank"
+							class="pricing__left-inside-card">
+							<div class="pricing__left-inside-card-left">
+								<h5 class="pricing__left-card-small-heading _4">
+									Refer a friend &amp; earn
+								</h5>
+								<p class="p-small smaller smallest m-b-0">
+									Earn 5% monthly recurring commissions for each referral.
+								</p>
+							</div>
+							<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de12548dcbda2881cd8ff5_Group%201.svg"
+								loading="lazy" alt="" />
+						</a>
+					</div>
+					<div class="top-right-element">
+						<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de149940ab9eb5eaf6a916_4.svg"
+							loading="lazy" alt="" class="image-79" />
+					</div>
+				</div>
+	
+				<div class="pricing__right-card col-lg-5">
+					<h4 class="heading-right">Membership</h4>
+					<div class="tabs w-tabs">
+						<div class="toggle">
+							<div class="standard toggle-btn">Standard</div>
+							<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de1509b0728fa49d0a4159_22.svg" loading="lazy" alt="" class="tab__bolt" />
+							<div class="pro toggle-btn">Pro</div>
+						</div>
+						
+						<div class="w-tab-content">
+							<div id="pricingTab1Container" data-w-tab="Tab 1" class="w-tab-pane w--tab-active" role="tabpanel">
+								<div class="pricing__right-top">
+									<h4 class="m-b-0" id="pricingTab1"></h4>
+									<p class="p-small smaller smallest no" id="priceDescriptionTab1"></p>
+								</div>
+						
+								<div class="pricing__right-bottom">
+									<p class="p-small smaller smallest">What's included</p>
+									<div class="w-layout-grid pricing__right-grid">
+										<ul id="leftColumnTab1" role="list" class="left-column">
+											<!-- Left column items will be dynamically added here -->
+										</ul>
+										<ul id="rightColumnTab1" role="list" class="right-column">
+											<!-- Right column items will be dynamically added here -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						
+							<div id="pricingTab2Container" data-w-tab="Tab 2" class="w-tab-pane" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-1">
+								<div class="pricing__right-top">
+									<h4 class="m-b-0" id="pricingTab2"></h4>
+									<p class="p-small smaller smallest no" id="priceDescriptionTab2"></p>
+								</div>
+						
+								<div class="pricing__right-bottom">
+									<p class="p-small smaller smallest" id="whatsIncludedTitleTab2"></p>
+									<div class="w-layout-grid pricing__right-grid">
+										<ul id="leftColumnTab2" role="list" class="left-column">
+											<!-- Left column items will be dynamically added here -->
+										</ul>
+										<ul id="rightColumnTab2" role="list" class="right-column">
+											<!-- Right column items will be dynamically added here -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+				
+						<div class="button__container">
+							<div class="button__wrapper">
+								<a href="https://buy.stripe.com/fZe28BaiLfOO99e146" class="button w-inline-block">
+									<div>Get started</div>
+								</a>
+								<div class="text-block-4">
+									or
+									<a href="#" class="link-2">book a call</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+	
+			</div>
+			<div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+			</div>
+		</section>
+		<!-- End of Pricing section
+		============================================= -->
+	
+	
+		<!-- Start of Testimonial section
+		============================================= -->
+		<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
+			<div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+				<!-- <img src="assets/img/vector/tst-vector1.png" alt=""> -->
+			</div>
+			<div class="container">
+				<div class="ori-testimonial-content-1 position-relative">
+					<div class="ori-testimonial-title text-center text-uppercase">
+						<h3 style="font-size: 2.5rem; font-family: poppins;">What our Client say</h3>
+					</div>
+					<div class="ori-testimonial-slider-1">
+						<div class="ori-testimonial-item-area">
+							<div class="ori-testimonial-item-1">
+								<div class="ori-testimonial-text text-center pera-content">
+									<p>“Our office is something we are pleased with. We consider it the little magnet; it is
+										wanting to come here and afterward difficult to leave it. Our office is additionally
+										a big name.”
+									</p>
+									<div class="ori-testimonial-author text-center text-uppercase">
+										<h4>Hahimlam Dirat</h4>
+										<span>ui/ux Designer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ori-testimonial-item-area">
+							<div class="ori-testimonial-item-1">
+								<div class="ori-testimonial-text text-center pera-content">
+									<p>“Our office is something we are pleased with. We consider it the little magnet; it is
+										wanting to come here and afterward difficult to leave it. Our office is additionally
+										a big name.”
+									</p>
+									<div class="ori-testimonial-author text-center text-uppercase">
+										<h4>Hahimlam Dirat</h4>
+										<span>ui/ux Designer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ori-testimonial-item-area">
+							<div class="ori-testimonial-item-1">
+								<div class="ori-testimonial-text text-center pera-content">
+									<p>“Our office is something we are pleased with. We consider it the little magnet; it is
+										wanting to come here and afterward difficult to leave it. Our office is additionally
+										a big name.”
+									</p>
+									<div class="ori-testimonial-author text-center text-uppercase">
+										<h4>Hahimlam Dirat</h4>
+										<span>ui/ux Designer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel_nav">
+						<button type="button" class="testi-left_arrow"
+							style="border-radius: 50%; border: 2px solid white; color: #c1dd42; "><i
+								class="fa-solid fa-arrow-left"></i></button>
+						<!-- <button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt=""></button> -->
+						<button type="button" class="testi-right_arrow"
+							style="border-radius: 50%; border: 2px solid white; color: #c1dd42;"><i
+								class="fa-solid fa-arrow-right"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+			</div>
+		</section>
+		<!-- End of Testimonial section
+		============================================= -->
+	
+		<!-- Start of Text scroll section
+		============================================= -->
+		<!-- <section id="ori-text-scroll-2" class="ori-text-scroll-section-2 position-relative">
+			<div class="ori-text-scroll-content">
+				<div class="ori-text-scroll-item-2 clearfix text-uppercase">
+					<h3>Creative Digital <span>Studio</span></h3>
+					<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+					<h3>Creative Digital <span>Agency</span></h3>
+					<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
+				</div>
+			</div>
+			<div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+			</div>
+		</section>		 -->
+		<!-- End of Text scroll section
+		============================================= -->
+	
+		<!-- Start of Blog section
+		============================================= -->
+		<!-- <section id="ori-blog-1" class="ori-blog-section-1 position-relative">
+			<div class="container">
+				<div class="ori-blog-top-content-1 d-flex justify-content-between align-items-center">
 					<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-						<h2>Meet our team of <span>professional</span></h2>
+						<h2>latest <span>posts</span></h2>
 					</div>
 					<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-						<a href="team.html">all Team Member</a>
+						<a href="blog.html">See all blogs</a>
 					</div>
 				</div>
-				<div class="ori-team-content-1">
+				<div class="ori-blog-content-1">
 					<div class="row">
 						<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-							<div class="ori-team-inner-item position-relative">
-								<div class="ori-team-img">
-									<img src="assets/img/team/tm1.png" alt="">
+							<div class="ori-blog-inner-item">
+								<div class="blog-inner-img">
+									<img src="assets/img/blog/blg1.png" alt="">
 								</div>
-								<div class="ori-team-text text-center position-absolute">
-									<h3><a href="team-single.html">Alextina Ditarson</a></h3>
-									<span>GRAPHIC DESIGNER</span>
-								</div>
-								<div class="ori-team-social text-center position-absolute">
-									<a href="#"><i class="fab fa-facebook-f"></i></a>
-									<a href="#"><i class="fab fa-twitter"></i></a>
-									<a href="#"><i class="fab fa-instagram"></i></a>
-									<a href="#"><i class="fab fa-youtube"></i></a>
+								<div class="blog-inner-text">
+									<h3><a href="blog-single.html">Accelerating UX Maturity With A Breakthrough Project</a></h3>
+									<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-							<div class="ori-team-inner-item position-relative">
-								<div class="ori-team-img">
-									<img src="assets/img/team/tm2.png" alt="">
+							<div class="ori-blog-inner-item">
+								<div class="blog-inner-img">
+									<img src="assets/img/blog/blg2.png" alt="">
 								</div>
-								<div class="ori-team-text text-center position-absolute">
-									<h3><a href="team-single.html">Alextina Ditarson</a></h3>
-									<span>GRAPHIC DESIGNER</span>
-								</div>
-								<div class="ori-team-social text-center position-absolute">
-									<a href="#"><i class="fab fa-facebook-f"></i></a>
-									<a href="#"><i class="fab fa-twitter"></i></a>
-									<a href="#"><i class="fab fa-instagram"></i></a>
-									<a href="#"><i class="fab fa-youtube"></i></a>
+								<div class="blog-inner-text">
+									<h3><a href="blog-single.html">Jump Into July (2022 Desktop Wallpapers Edition)</a></h3>
+									<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-							<div class="ori-team-inner-item position-relative">
-								<div class="ori-team-img">
-									<img src="assets/img/team/tm3.png" alt="">
+							<div class="ori-blog-inner-item">
+								<div class="blog-inner-img">
+									<img src="assets/img/blog/blg3.png" alt="">
 								</div>
-								<div class="ori-team-text text-center position-absolute">
-									<h3><a href="team-single.html">Alextina Ditarson</a></h3>
-									<span>GRAPHIC DESIGNER</span>
-								</div>
-								<div class="ori-team-social text-center position-absolute">
-									<a href="#"><i class="fab fa-facebook-f"></i></a>
-									<a href="#"><i class="fab fa-twitter"></i></a>
-									<a href="#"><i class="fab fa-instagram"></i></a>
-									<a href="#"><i class="fab fa-youtube"></i></a>
+								<div class="blog-inner-text">
+									<h3><a href="blog-single.html">How To Build A Localized Website With Hugo And Strapi</a></h3>
+									<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section> -->
-	<!-- End of Team section
-	============================================= -->
-
-	<!-- Start of Pricing section
-	============================================= -->
-	<section class="pricing-container">
-		<div class="pricing-flex container">
-			<div class="pricing-left col-lg-5">
-				<div class="pricing-left-top">
-					<div class="available-pill">
-						<div class="slots-available">
-							<p class="small-print">Slots available</p>
-						</div>
-					</div>
-				</div>
-				<h1 class="price-left-heading">
-					Join
-					<br />
-					Designjoy
-				</h1>
-				<div class="price-left-botom">
-					<a href="https://calendly.com/designjoy/designjoy-intro-1?month=2024-02" target="_blank"
-						class="pricing__left-inside-card top">
-						<div class="pricing__left-inside-card-left">
-							<h5 class="pricing__left-card-small-heading">
-								Book a 15-min intro call
-							</h5>
-							<p class="p-small smaller smallest m-b-0">
-								Learn more about how DesignJoy works and how it can help you.
-							</p>
-						</div>
-						<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de12548dcbda2881cd8ff5_Group%201.svg"
-							loading="lazy" alt="" />
-					</a>
-					<a href="https://designjoy.getrewardful.com/signup" target="_blank"
-						class="pricing__left-inside-card">
-						<div class="pricing__left-inside-card-left">
-							<h5 class="pricing__left-card-small-heading _4">
-								Refer a friend &amp; earn
-							</h5>
-							<p class="p-small smaller smallest m-b-0">
-								Earn 5% monthly recurring commissions for each referral.
-							</p>
-						</div>
-						<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de12548dcbda2881cd8ff5_Group%201.svg"
-							loading="lazy" alt="" />
-					</a>
-				</div>
-				<div class="top-right-element">
-					<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de149940ab9eb5eaf6a916_4.svg"
-						loading="lazy" alt="" class="image-79" />
-				</div>
+			<div class="line_animation">
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
+				<div class="line_area"></div>
 			</div>
-
-			<div class="pricing__right-card col-lg-5">
-				<h4 class="heading-right">Membership</h4>
-				<div class="tabs w-tabs">
-					<div class="toggle">
-						<div class="standard toggle-btn">Standard</div>
-						<img src="https://assets-global.website-files.com/5837424ae11409586f837994/65de1509b0728fa49d0a4159_22.svg" loading="lazy" alt="" class="tab__bolt" />
-						<div class="pro toggle-btn">Pro</div>
-					</div>
-					
-					<div class="w-tab-content">
-						<div id="pricingTab1Container" data-w-tab="Tab 1" class="w-tab-pane w--tab-active" role="tabpanel">
-							<div class="pricing__right-top">
-								<h4 class="m-b-0" id="pricingTab1"></h4>
-								<p class="p-small smaller smallest no" id="priceDescriptionTab1"></p>
-							</div>
-					
-							<div class="pricing__right-bottom">
-								<p class="p-small smaller smallest">What's included</p>
-								<div class="w-layout-grid pricing__right-grid">
-									<ul id="leftColumnTab1" role="list" class="left-column">
-										<!-- Left column items will be dynamically added here -->
-									</ul>
-									<ul id="rightColumnTab1" role="list" class="right-column">
-										<!-- Right column items will be dynamically added here -->
-									</ul>
-								</div>
-							</div>
-						</div>
-					
-						<div id="pricingTab2Container" data-w-tab="Tab 2" class="w-tab-pane" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-1">
-							<div class="pricing__right-top">
-								<h4 class="m-b-0" id="pricingTab2"></h4>
-								<p class="p-small smaller smallest no" id="priceDescriptionTab2"></p>
-							</div>
-					
-							<div class="pricing__right-bottom">
-								<p class="p-small smaller smallest" id="whatsIncludedTitleTab2"></p>
-								<div class="w-layout-grid pricing__right-grid">
-									<ul id="leftColumnTab2" role="list" class="left-column">
-										<!-- Left column items will be dynamically added here -->
-									</ul>
-									<ul id="rightColumnTab2" role="list" class="right-column">
-										<!-- Right column items will be dynamically added here -->
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-			
-					<div class="button__container">
-						<div class="button__wrapper">
-							<a href="https://buy.stripe.com/fZe28BaiLfOO99e146" class="button w-inline-block">
-								<div>Get started</div>
-							</a>
-							<div class="text-block-4">
-								or
-								<a href="#" class="link-2">book a call</a>
-							</div>
-						</div>
+		</section>	 -->
+		<!-- End of Blog section
+		============================================= -->
+	
+		<!-- Getin touch -->
+	
+	
+	<!-- 
+		<section class="Form-teaser">
+			<div class="teaser-section">
+				<div class="left-side">
+					<img src="assets/img/custom/contact-bg.webp" alt="Teaser Image" class="teaser-image"> -->
+					<!-- <div class="center-btn">
+				<a href="contact.html" class="schedule-button">Let's Schedule<i style="padding-left: 5px;" class="fa-solid fa-calendar-check"></i></a>
+				</div> -->
+				<!-- </div>
+				<div class="right-side"> -->
+					<!-- <h2>Ready to Get Started?</h2> -->
+					<!-- <p style="color: #fbae19; font-weight: 400; font-size: 1.4rem;">Our team of experts will be happy to assist you in a free 30 mins discovery call. We're excited to connect with you and meeting you soon. </p> -->
+					<!-- <p class="primary-heading" style="color: #c1dd42;  font-size: 3rem ; text-align: center;
+					word-spacing: 0px;">
+						Start Cooking Your Next
+						<br>
+						project<span class="txt-thin mil-maroon" style="margin: 0 10px; color: white;">WITH US</span>
+					</p>
+	
+					<div class="center-btn">
+						<a href="contact.html" class="schedule-button" style="color: black;">Let's Schedule<i
+								style="padding-left: 5px; color: black;" class="fa-solid fa-calendar-check"></i></a>
 					</div>
 				</div>
 			</div>
-			
-
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>
-	<!-- End of Pricing section
-	============================================= -->
-
-
-	<!-- Start of Testimonial section
-	============================================= -->
-	<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
-		<div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-			<!-- <img src="assets/img/vector/tst-vector1.png" alt=""> -->
-		</div>
-		<div class="container">
-			<div class="ori-testimonial-content-1 position-relative">
-				<div class="ori-testimonial-title text-center text-uppercase">
-					<h3 style="font-size: 2.5rem; font-family: poppins;">What our Client say</h3>
-				</div>
-				<div class="ori-testimonial-slider-1">
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Our office is something we are pleased with. We consider it the little magnet; it is
-									wanting to come here and afterward difficult to leave it. Our office is additionally
-									a big name.”
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Hahimlam Dirat</h4>
-									<span>ui/ux Designer</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Our office is something we are pleased with. We consider it the little magnet; it is
-									wanting to come here and afterward difficult to leave it. Our office is additionally
-									a big name.”
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Hahimlam Dirat</h4>
-									<span>ui/ux Designer</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ori-testimonial-item-area">
-						<div class="ori-testimonial-item-1">
-							<div class="ori-testimonial-text text-center pera-content">
-								<p>“Our office is something we are pleased with. We consider it the little magnet; it is
-									wanting to come here and afterward difficult to leave it. Our office is additionally
-									a big name.”
-								</p>
-								<div class="ori-testimonial-author text-center text-uppercase">
-									<h4>Hahimlam Dirat</h4>
-									<span>ui/ux Designer</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel_nav">
-					<button type="button" class="testi-left_arrow"
-						style="border-radius: 50%; border: 2px solid white; color: #c1dd42; "><i
-							class="fa-solid fa-arrow-left"></i></button>
-					<!-- <button type="button" class="testi-right_arrow"><img src="assets/img/vector/next.png" alt=""></button> -->
-					<button type="button" class="testi-right_arrow"
-						style="border-radius: 50%; border: 2px solid white; color: #c1dd42;"><i
-							class="fa-solid fa-arrow-right"></i></button>
-				</div>
+		</section> -->
+	
+		<!-- Start of Footer section
+		============================================= -->
+		<!-- Cta section start -->
+		<section class="ori-cta">
+			<div class="ori-container">
+				<h1>Lets Create an measurable impact on your business</h1>
+				<button>connect with us</button>
 			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>
-	<!-- End of Testimonial section
-	============================================= -->
-
-	<!-- Start of Text scroll section
-	============================================= -->
-	<!-- <section id="ori-text-scroll-2" class="ori-text-scroll-section-2 position-relative">
-		<div class="ori-text-scroll-content">
-			<div class="ori-text-scroll-item-2 clearfix text-uppercase">
-				<h3>Creative Digital <span>Studio</span></h3>
-				<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
-				<h3>Creative Digital <span>Agency</span></h3>
-				<span class="ori-text-scroll-icon"><i class="fas fa-star"></i></span>
-			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>		 -->
-	<!-- End of Text scroll section
-	============================================= -->
-
-	<!-- Start of Blog section
-	============================================= -->
-	<!-- <section id="ori-blog-1" class="ori-blog-section-1 position-relative">
-		<div class="container">
-			<div class="ori-blog-top-content-1 d-flex justify-content-between align-items-center">
-				<div class="ori-section-title-1 text-uppercase wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-					<h2>latest <span>posts</span></h2>
-				</div>
-				<div class="ori-btn-1 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-					<a href="blog.html">See all blogs</a>
-				</div>
-			</div>
-			<div class="ori-blog-content-1">
-				<div class="row">
-					<div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-						<div class="ori-blog-inner-item">
-							<div class="blog-inner-img">
-								<img src="assets/img/blog/blg1.png" alt="">
-							</div>
-							<div class="blog-inner-text">
-								<h3><a href="blog-single.html">Accelerating UX Maturity With A Breakthrough Project</a></h3>
-								<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-						<div class="ori-blog-inner-item">
-							<div class="blog-inner-img">
-								<img src="assets/img/blog/blg2.png" alt="">
-							</div>
-							<div class="blog-inner-text">
-								<h3><a href="blog-single.html">Jump Into July (2022 Desktop Wallpapers Edition)</a></h3>
-								<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-						<div class="ori-blog-inner-item">
-							<div class="blog-inner-img">
-								<img src="assets/img/blog/blg3.png" alt="">
-							</div>
-							<div class="blog-inner-text">
-								<h3><a href="blog-single.html">How To Build A Localized Website With Hugo And Strapi</a></h3>
-								<a class="read-more text-uppercase" href="blog-single.html">Read more <i class="fal fa-chevron-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="line_animation">
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-			<div class="line_area"></div>
-		</div>
-	</section>	 -->
-	<!-- End of Blog section
-	============================================= -->
-
-	<!-- Getin touch -->
-
-
-<!-- 
-	<section class="Form-teaser">
-		<div class="teaser-section">
-			<div class="left-side">
-				<img src="assets/img/custom/contact-bg.webp" alt="Teaser Image" class="teaser-image"> -->
-				<!-- <div class="center-btn">
-			<a href="contact.html" class="schedule-button">Let's Schedule<i style="padding-left: 5px;" class="fa-solid fa-calendar-check"></i></a>
-			</div> -->
-			<!-- </div>
-			<div class="right-side"> -->
-				<!-- <h2>Ready to Get Started?</h2> -->
-				<!-- <p style="color: #fbae19; font-weight: 400; font-size: 1.4rem;">Our team of experts will be happy to assist you in a free 30 mins discovery call. We're excited to connect with you and meeting you soon. </p> -->
-				<!-- <p class="primary-heading" style="color: #c1dd42;  font-size: 3rem ; text-align: center;
-				word-spacing: 0px;">
-					Start Cooking Your Next
-					<br>
-					project<span class="txt-thin mil-maroon" style="margin: 0 10px; color: white;">WITH US</span>
+		</section>
+		<!-- Cta section end -->
+	
+	
+		<footer class="footer8">
+			<div class="container8">
+				<div class="footer_logo8"><img class="img8" src="assets/img/logo/psi_logo.png" alt=""></div>
+				<!-- <a href="#." class="brand8">Brand</a> -->
+				<ul class="menu8">
+					<li><a href="">Home</a></li>
+					<li><a href="">Design</a></li>
+					<li><a href="">Content</a></li>
+					<li><a href="">Consult</a></li>
+				</ul>
+				<ul class="media-icons8">
+					<li><a href=""><i class="fab fa-facebook"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+				</ul>
+				<p class="footer_adr">
+					<!-- Office #802, SIT Tower, Dubai Silicon Oasis, Dubai, United Arab Emirates -->
+					<br><span class="txt-thin mil-maroon"><i class="fa-solid fa-phone"></i> 123786 786 786 <br><i
+							class="fa-solid fa-envelope-circle-check"></i> <a href="mailto:primesiteinnovative@gmail.com">primesiteinnovation@gmail.com</a></br></span> </br>
+	
 				</p>
-
-				<div class="center-btn">
-					<a href="contact.html" class="schedule-button" style="color: black;">Let's Schedule<i
-							style="padding-left: 5px; color: black;" class="fa-solid fa-calendar-check"></i></a>
-				</div>
+	
+	
 			</div>
-		</div>
-	</section> -->
+			<p>All Rights Reserved | Copyright© primesiteinnovation.com 2024</p>
+		</footer>
+	
+	
+		<!-- End of Footer section
+		============================================= -->
+	</div>
 
-	<!-- Start of Footer section
-	============================================= -->
-	<!-- Cta section start -->
-	<section class="ori-cta">
-		<div class="ori-container">
-			<h1>Lets Create an measurable impact on your business</h1>
-			<button>connect with us</button>
-		</div>
-	</section>
-	<!-- Cta section end -->
-
-
-	<footer class="footer8">
-		<div class="container8">
-			<div class="footer_logo8"><img class="img8" src="assets/img/logo/psi_logo.png" alt=""></div>
-			<!-- <a href="#." class="brand8">Brand</a> -->
-			<ul class="menu8">
-				<li><a href="">Home</a></li>
-				<li><a href="">Design</a></li>
-				<li><a href="">Content</a></li>
-				<li><a href="">Consult</a></li>
-			</ul>
-			<ul class="media-icons8">
-				<li><a href=""><i class="fab fa-facebook"></i></a></li>
-				<li><a href=""><i class="fab fa-twitter"></i></a></li>
-				<li><a href=""><i class="fab fa-instagram"></i></a></li>
-				<li><a href=""><i class="fab fa-linkedin"></i></a></li>
-			</ul>
-			<p class="footer_adr">
-				<!-- Office #802, SIT Tower, Dubai Silicon Oasis, Dubai, United Arab Emirates -->
-				<br><span class="txt-thin mil-maroon"><i class="fa-solid fa-phone"></i> 123786 786 786 <br><i
-						class="fa-solid fa-envelope-circle-check"></i> <a href="mailto:primesiteinnovative@gmail.com">primesiteinnovation@gmail.com</a></br></span> </br>
-
-			</p>
-
-
-		</div>
-		<p>All Rights Reserved | Copyright© primesiteinnovation.com 2024</p>
-	</footer>
-
-
-	<!-- End of Footer section
-	============================================= -->
 
 	<!-- For Js Library -->
 	<!-- scroll animation for the text -->
