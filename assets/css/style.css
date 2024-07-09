@@ -1,6 +1,6 @@
 /*----------------------------------------------------
 CSS Table Of Content
-1. Global Area 
+1. Global Area
 2. Header Section
 3. Home Page 1
 	- global area
@@ -47,47 +47,47 @@ CSS Table Of Content
 	-Testimonial area
 	-Blog area
 8. Home page 6
-	- Global area	
-	- Banner area	
-	- Service area	
-	- About area	
-	- Case area	
-	- How Help area	
-	- Sponsor Testimonial area	
-	- Blog area	
+	- Global area
+	- Banner area
+	- Service area
+	- About area
+	- Case area
+	- How Help area
+	- Sponsor Testimonial area
+	- Blog area
 9. Home page 7
-	- Global area	
-	- banner area	
-	- sponsor area	
-	- about area	
-	- service area	
-	- video-skill area	
-	- counter-project area	
-	- project area	
-	- testimonial area	
-	- blog area	
-	- social-ratting area	
-	- footer-ctat area	
+	- Global area
+	- banner area
+	- sponsor area
+	- about area
+	- service area
+	- video-skill area
+	- counter-project area
+	- project area
+	- testimonial area
+	- blog area
+	- social-ratting area
+	- footer-ctat area
 10. Inner Pages
-	-breadcrumb	
-	-about-page	
-	-service-page	
-	-service-details-page	
-	-mission-page	
-	-team-details-page	
-	-faq-page	
-	-portfolio-page	
-	-portfolio-details-page	
-	-blog-page	
-	-blog-details-page	
-	-shop-page	
-	-shop-details-page	
-	-cart-page	
-	-check-out-page	
-	-price-page	
-	-contact-page	
+	-breadcrumb
+	-about-page
+	-service-page
+	-service-details-page
+	-mission-page
+	-team-details-page
+	-faq-page
+	-portfolio-page
+	-portfolio-details-page
+	-blog-page
+	-blog-details-page
+	-shop-page
+	-shop-details-page
+	-cart-page
+	-check-out-page
+	-price-page
+	-contact-page
 11. Footer Area
-12. Responsive Area 
+12. Responsive Area
 
 =====================================================================*/
 /*=========
@@ -15572,7 +15572,7 @@ Font load
   width: 50%;
 }
 
-/* 
+/*
 .Form-teaser {
   padding: 50px;
 }
@@ -16033,7 +16033,7 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  z-index: 999; 
+  z-index: 999;
   gap: 1.5vw;
   transition: transform 1s ease-out;
 }
@@ -16268,6 +16268,7 @@ a {
   width:10px;
   height:10px;
   border-radius:50%;
+  background-color: #fff;
   background:radial-gradient(rgba(255,255,255,.5),rgba(255,255,255,0));
   z-index: 678888888;
 
