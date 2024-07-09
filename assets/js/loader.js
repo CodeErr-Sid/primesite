@@ -21,7 +21,7 @@ window.addEventListener("load", function () {
       clearInterval(interval);
       init_loader();
     }
-  }, 95); // Adjust the speed of the increment as needed
+  }, 50); // Adjust the speed of the increment as needed
 
   // Animate reveal-text elements
   const splitTypes = document.querySelectorAll(".reveal-text");
@@ -40,7 +40,7 @@ window.addEventListener("load", function () {
       {
         color: fg,
         opacity: 1,
-        duration: 10, // Set the duration to 10 seconds
+        duration: 5, // Set the duration to 10 seconds
         stagger: 0.02,
       }
     );
@@ -55,7 +55,7 @@ window.addEventListener("load", function () {
       loader.style.display = "none";
       document.getElementById("main").style.display = "block";
     });
-  }, 10000); // 10 seconds delay
+  }, 5000); // 10 seconds delay
 });
 
 const lenis = new Lenis();
