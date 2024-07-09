@@ -53,8 +53,7 @@ Last change:    00/00/00
       startLoader: function () {
         $(document).ready(function () {
           function init_loader() {
-
-            $(".page-wrapper").slideUp('smooth') // Remove hide class to reveal main content
+            $(".page-wrapper").slideUp("smooth"); // Remove hide class to reveal main content
           }
 
           function incrementNumber() {
@@ -1606,7 +1605,6 @@ $(document).ready(function () {
 
 // Select the body element
 
-
 $(document).ready(function () {
   const pricingInfoTab1 = {
     pricing: "$4,995",
@@ -1720,4 +1718,3 @@ $(document).ready(function () {
     }
   });
 });
-
