@@ -1,3 +1,5 @@
+// Register the BezierPlugin
+gsap.registerPlugin(BezierPlugin);
 var numP = 60;
 
 for (var i = 1; i < numP; i++) {
