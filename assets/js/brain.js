@@ -22,6 +22,10 @@ document.getElementById("container3D").appendChild(renderer.domElement);
 
 console.log("Initializing OrbitControls");
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false; // Disable zoom
+controls.enablePan = false; // Disable panning
+controls.enableRotate = false; // Disable manual rotation
+
 camera.position.set(0, 50, 100);
 
 console.log("Adding lights to the scene");
@@ -41,7 +45,7 @@ loader.load(
     console.log("3D model loaded successfully");
     const object = gltf.scene;
     object.scale.set(17, 17, 17);
-    object.position.set(-67, -15, 0);
+    object.position.set(-67, 25, 0);
 
     object.traverse((child) => {
       if (child.isMesh) {
@@ -62,7 +66,6 @@ loader.load(
       // Rotate the object around its Y-axis
       object.rotation.y += 0.01; // Adjust rotation speed as needed
 
-      controls.update();
       renderer.render(scene, camera);
     }
   },
@@ -74,7 +77,6 @@ loader.load(
   }
 );
 
-console.log("Setting up window resize event listener");
 window.addEventListener("resize", () => {
   console.log("Window resized");
   camera.aspect = window.innerWidth / window.innerHeight;

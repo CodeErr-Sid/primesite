@@ -1719,10 +1719,18 @@ $(document).ready(function () {
   });
 });
 
-// cursor
-$(window).mousemove(function (e) {
-  $(".ring").css(
-    "transform",
-    `translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem))`
-  );
-});
+// // cursor
+// $(window).mousemove(function (e) {
+//   $(".cursor").css(
+//     "transform",
+//     `translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem))`
+//   );
+// });
+
+// $("a, button, .interactive")
+//   .on("mouseenter", function () {
+//     $(".cursor div:nth-child(2) div").css("transform", "scale(0.5)");
+//   })
+//   .on("mouseleave", function () {
+//     $(".cursor div:nth-child(2) div").css("transform", "scale(1)");
+//   });
