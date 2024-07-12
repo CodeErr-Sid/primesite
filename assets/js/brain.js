@@ -22,10 +22,9 @@ document.getElementById("container3D").appendChild(renderer.domElement);
 
 console.log("Initializing OrbitControls");
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableZoom = false; // Disable zoom
-controls.enablePan = false; // Disable panning
-controls.enableRotate = false; // Disable manual rotation
-
+controls.enableZoom = false;
+controls.enablePan = false;
+controls.enableRotate = false;
 camera.position.set(0, 50, 100);
 
 console.log("Adding lights to the scene");
@@ -39,13 +38,15 @@ scene.add(directionalLight);
 
 console.log("Loading 3D model");
 const loader = new GLTFLoader();
+let object;
+
 loader.load(
   `models/brain/scene.gltf`,
   function (gltf) {
     console.log("3D model loaded successfully");
-    const object = gltf.scene;
-    object.scale.set(17, 17, 17);
-    object.position.set(-67, 25, 0);
+    object = gltf.scene;
+    object.scale.set(15, 15, 15);
+    object.position.set(-67, 28, 0);
 
     object.traverse((child) => {
       if (child.isMesh) {
@@ -57,17 +58,9 @@ loader.load(
     });
 
     scene.add(object);
+    adjustScale();
 
     animate();
-
-    function animate() {
-      requestAnimationFrame(animate);
-
-      // Rotate the object around its Y-axis
-      object.rotation.y += 0.01; // Adjust rotation speed as needed
-
-      renderer.render(scene, camera);
-    }
   },
   function (xhr) {
     console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
@@ -77,9 +70,64 @@ loader.load(
   }
 );
 
+function animate() {
+  requestAnimationFrame(animate);
+
+  if (object) {
+    object.rotation.y += 0.01;
+  }
+
+  renderer.render(scene, camera);
+}
+
+function adjustScale() {
+  if (window.matchMedia("(min-width: 330px) and (max-width: 515px)").matches) {
+    console.log("Adjusting scale for screens up to 515px");
+    if (object) {
+      object.scale.set(12.5, 12.5, 12.5);
+      object.position.set(4, 60, 0); // Center the position
+    }
+  } else if (
+    window.matchMedia("(min-width: 516px) and (max-width: 760px)").matches
+  ) {
+    console.log("Adjusting scale for small screens");
+    if (object) {
+      object.scale.set(15, 15, 15);
+      object.position.set(-5, 50, 0);
+    }
+  } else if (
+    window.matchMedia("(min-width: 761px) and (max-width: 830px)").matches
+  ) {
+    console.log("Adjusting scale for medium-small screens");
+    if (object) {
+      object.scale.set(12, 12, 12);
+      object.position.set(-43, 50, 0);
+    }
+  } else if (
+    window.matchMedia("(min-width: 831px) and (max-width: 1030px)").matches
+  ) {
+    console.log("Adjusting scale for medium screens");
+    if (object) {
+      object.scale.set(13, 13, 13);
+      object.position.set(-55, 50, 0);
+    }
+  } else {
+    console.log("Adjusting scale for large screens");
+    if (object) {
+      object.scale.set(15, 15, 15);
+      object.position.set(-67, 28, 0);
+    }
+  }
+}
+
+// Initial adjustment
+adjustScale();
+
+// Adjust on window resize
 window.addEventListener("resize", () => {
   console.log("Window resized");
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
+  adjustScale();
 });

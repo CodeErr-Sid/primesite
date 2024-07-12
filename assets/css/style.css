@@ -1914,7 +1914,7 @@ select:visited {
   width: 100%;
   content: "";
   z-index: -1;
-  height: 530px;
+  height: 420px;
   margin: 0 auto;
   position: absolute;
   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(79.32%, rgba(9, 9, 9, 0)), color-stop(99.06%, #0D0D0D));
@@ -1952,7 +1952,7 @@ select:visited {
 }
 
 .ori-slider-text {
-  max-width: 970px;
+  
   width: 50%;
 }
 
@@ -5640,17 +5640,49 @@ select:visited {
   width: 50%;
   font-size: 1rem;
   font-weight: 100;
+  transition: opacity 1s ease-in-out; 
 }
 
-.ori-services-footer .getproposal {
-  border: 1px solid white;
+
+.ori-services-footer  {
+  /* border: 1px solid white; */
   color: white;
   padding: 1em;
   font-size: 1.2rem;
-  border-radius: 25px;
+  border-radius: 0px;
   background: inherit;
 }
 
+.getproposal{
+
+    border-radius: 25px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white;
+    padding: 1rem;
+    font-size: 1rem;
+    background-size: 300%;
+    transition: all 0.6s;
+}
+.green {
+  color: #c1dd42;
+  background-image: linear-gradient(-120deg, #c1dd42 50%, #1a1a1a 50%);
+}
+
+.getproposal:hover {
+  color: #fff;
+  background-position: 100%;
+  transform: translateX(0.5rem);
+}
+
+.getproposal:active {
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
+}
 
 /* rotating object video section */
 
@@ -5777,8 +5809,8 @@ select:visited {
 }
 
 .ori-container button {
-  height: fit-content;
-  padding: 1rem;
+  width: 200px;
+  height: 60px;
   font-size: 1.4rem;
   background: black;
   color: #c1dd42;
@@ -16009,10 +16041,7 @@ a {
 
 /* Media query for responsiveness */
 @media screen and (max-width: 767px) {
-  .toggle {
-    max-width: none;
-  }
-
+  
   .standard,
   .text-block {
     width: 100px;
@@ -16021,6 +16050,12 @@ a {
 
 .active-class {
   background-color: #ebd406;
+  color: black;
+}
+
+
+.active-class {
+  background-color: #c1dd42;
   color: black;
 }
 
@@ -16103,9 +16138,9 @@ a {
 }
 
 .page-load-top img{
-  width: 150px;
+  width: 350px;
    z-index: 10;
-    margin-bottom: 5rem!important;
+    margin-bottom: 7rem!important;
      margin-right: 20px!important;
 }
 .loader-one-line {
@@ -16151,6 +16186,8 @@ a {
 .text-anime-opacity{
   position: absolute;
   bottom: 4rem;
+  /* left: 6rem!important; */
+  margin: 10px 1.5rem!important;
 }
 .pg-loading-number {
   color: #fff;
@@ -16214,7 +16251,7 @@ a {
   .text-anime-opacity {
     font-size: 1rem;
     font-weight: 400;
-    margin: 10px 5px;
+    margin: 10px 0.2rem!important;
   }
 
   .super-text-xl {
@@ -16323,4 +16360,119 @@ a {
 }
 .interactive:hover ~ .cursor div:nth-child(2) div {
   transform: scale(0.5);
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 515px) {
+  .ori-slider-text {
+    max-width: 280px !important;
+  }
+
+  .ori-slider-text h1 {
+    font-size: 3.5rem !important;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  .ori-service-heading {
+    font-size: 3.4rem;
+    max-width: 320px;
+    overflow-wrap: break-word; 
+    overflow: hidden; 
+    white-space: normal; 
+    text-align: center;
+}
+.ori-services-inner-section{
+  padding: 0;
+}
+.orv-email{
+font-size: 1.8rem!important;
+}
+#orv-upper-text p{
+  letter-spacing: 1!important;
+}
+.orv-bottom-right .orv-lc{
+  font-size: 1.8rem!important;
+}
+
+}
+  
+@media screen and (max-width:760px) {
+  .ori-slider-wrap-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ori-slider-content-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 50px 80px 50px;
+   
+  }
+
+  .ori-slider-text,
+  #container3D {
+    width: 100%;
+    text-align: center;
+    
+  }
+  #container3D{
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+    padding-top: 30px;
+  }
+ 
+
+}
+@media  screen and (min-width: 516px) and (max-width:985px) {
+  .ori-services-inner-section{
+    padding: 0;
+  }
+  .ori-service-heading{
+    font-size: 4.8rem;
+  }
+  .orv-email{
+    font-size: 1.8rem!important;
+  }
+  #orv-upper-text p{
+    letter-spacing: -2!important;
+  }
+  .orv-bottom-right .orv-lc{
+    font-size: 1.8rem!important;
+  }
+}
+@media screen and (max-width: 904px) {
+  .ori-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .ori-container h1,
+  .ori-container button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    
+  }
+  .ori-container h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ori-container button {
+    padding-top: 10px;
+     width: 200px;
+     font-size: 1.5rem;
+  }
 }
