@@ -1719,18 +1719,57 @@ $(document).ready(function () {
   });
 });
 
-// // cursor
-// $(window).mousemove(function (e) {
-//   $(".cursor").css(
-//     "transform",
-//     `translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem))`
-//   );
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(MotionPathPlugin);
 
-// $("a, button, .interactive")
-//   .on("mouseenter", function () {
-//     $(".cursor div:nth-child(2) div").css("transform", "scale(0.5)");
-//   })
-//   .on("mouseleave", function () {
-//     $(".cursor div:nth-child(2) div").css("transform", "scale(1)");
-//   });
+  var numP = 60;
+
+  for (var i = 1; i < numP; i++) {
+    var _p = document.createElement("div");
+    _p.className = "p";
+    _p.id = "p" + i;
+    document.getElementById("particles").appendChild(_p);
+    gsap.set(_p, {
+      scale: 0.5 + 1.5 * Math.random(),
+      alpha: 0.25 + Math.random(),
+      x: window.innerWidth / 2 + (-40 + 80 * Math.random()),
+      y: window.innerHeight / 2 + (-40 + 80 * Math.random()),
+    });
+  }
+
+  window.addEventListener("mousemove", function (e) {
+    for (var ii = 1; ii < numP; ii++) {
+      const particle = "#p" + ii;
+      const particleElement = document.querySelector(particle);
+      if (!particleElement) {
+        console.error("Particle element not found:", particle);
+        continue; // Skip if the particle is not found
+      }
+
+      gsap.to(particleElement, {
+        duration: 0.5,
+        delay: 0.005 * ii,
+        motionPath: {
+          path: [
+            {
+              x: e.clientX + 25 - 50 * Math.random(),
+              y: e.clientY + 25 - 50 * Math.random(),
+            },
+            { x: e.clientX, y: e.clientY },
+          ],
+          curviness: 1.5,
+        },
+        ease: "back.out(3)",
+      });
+      gsap.to(particleElement, {
+        duration: 0.005 * ii,
+        scale: 4,
+      });
+      gsap.to(particleElement, {
+        duration: 0.5,
+        delay: 0.005 * ii,
+        scale: 0,
+      });
+    }
+  });
+});

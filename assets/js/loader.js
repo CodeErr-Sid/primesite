@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("load", function () {
+  document.body.classList.add("loader-active");
   // Start the loader number increment
   let $loaderNumber = $(".loader_number");
   let currentNumber = 0;
@@ -53,6 +54,7 @@ window.addEventListener("load", function () {
     loader.classList.add("slide-up");
     loader.addEventListener("transitionend", function () {
       loader.style.display = "none";
+      document.body.classList.remove("loader-active");
       document.getElementById("main").style.display = "block";
     });
   }, 5000); // 10 seconds delay
